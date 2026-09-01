@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Baseball Analytics Shiny App screenshot placeholder">
+  <rect width="1200" height="675" fill="#eef3f8"/>
+  <rect x="85" y="75" width="1030" height="525" rx="24" fill="#fff" stroke="#9fb3c8" stroke-width="6"/>
+  <rect x="85" y="75" width="1030" height="65" rx="24" fill="#102a43"/>
+  <circle cx="130" cy="107" r="10" fill="#a63d40"/><circle cx="165" cy="107" r="10" fill="#d9e2ec"/>
+  <rect x="135" y="195" width="250" height="330" rx="12" fill="#e8eef4"/>
+  <path d="M465 500L570 365l115 55 130-180 175 230" fill="none" stroke="#a63d40" stroke-width="18"/>
+  <text x="600" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#102a43">[ADD SHINY APP SCREENSHOT]</text>
+</svg>

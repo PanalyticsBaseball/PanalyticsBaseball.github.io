@@ -2,22 +2,25 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Gabriel 
+title: Panalytics Baseball | Gabriel Sequera
+first_name: Gabriel
 middle_name:
 last_name: Sequera
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: "Baseball Operations, Player Development and Data Analytics Portfolio" # the ">" symbol means to ignore newlines until "footer_text:"
-  
+  Connect with Gabriel about Baseball Operations, Player Development, Scouting, and Baseball Analytics opportunities.
+description: >
+  Baseball Operations, Player Development and Baseball Analytics portfolio featuring R, Shiny, player analysis and baseball research.
+author: Gabriel Sequera
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  <strong>Panalytics Baseball</strong> ·
+  <span>LinkedIn [ADD LINKEDIN URL]</span> ·
+  <a href="https://github.com/PanalyticsBaseball" target="_blank" rel="noopener">GitHub</a> ·
+  <span>Email [ADD EMAIL]</span> ·
+  Built with GitHub Pages
+keywords: baseball operations, player development, baseball analytics, scouting, R, Shiny, Gabriel Sequera, Panalytics Baseball
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
+icon: panalytics-favicon.svg
+apple_touch_icon:
 
 url: https://PanalyticsBaseball.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -96,11 +99,11 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
-bib_search: true
+posts_in_search: false
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -110,9 +113,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/panalytics-og-placeholder.svg
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -136,8 +139,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Baseball Research & Insights
+blog_description: Data-informed perspectives on Baseball Operations, Player Development, Scouting, and Baseball Analytics.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -173,17 +176,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -207,6 +200,9 @@ collections:
     output: true
   projects:
     output: true
+  players:
+    output: true
+    permalink: /player-analysis/:name/
   teachings:
     output: true
 
@@ -245,6 +241,28 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/plugins.md
+  - _pages/profiles.md
+  - _pages/publications.md
+  - _pages/repositories.md
+  - _pages/teaching.md
+  - _bibliography/
+  - _books/
+  - _news/
+  - _posts/
+  - _teachings/
+  - assets/jupyter/
+  - assets/audio/
+  - assets/html/
+  - assets/json/
+  - assets/plotly/
+  - assets/pdf/
+  - assets/rendercv/rendercv_output/
+  - assets/video/
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -308,6 +326,12 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: players
+    values:
+      layout: page
+      nav: false
 
 sass:
   style: compressed
@@ -356,8 +380,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Sequera]
+  first_name: [Gabriel, G.]
 
   style: apa
   locale: en
@@ -480,7 +504,7 @@ enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
-enable_project_categories: true # enables categorization of projects into multiple categories
+enable_project_categories: false # a single, recruiter-focused project grid is clearer for this portfolio
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.

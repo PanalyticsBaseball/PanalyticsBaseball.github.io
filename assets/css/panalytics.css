@@ -1,0 +1,235 @@
+:root {
+  --pb-navy: #102a43;
+  --pb-navy-soft: #243b53;
+  --pb-slate: #627d98;
+  --pb-border: #d9e2ec;
+  --pb-surface: #f7f9fc;
+  --pb-accent: #a63d40;
+  --pb-white: #ffffff;
+}
+
+.pb-eyebrow {
+  color: var(--pb-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.65rem;
+  text-transform: uppercase;
+}
+
+.pb-lead {
+  color: var(--pb-navy-soft);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.7;
+  max-width: 48rem;
+}
+
+.pb-meta {
+  color: var(--pb-slate);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.pb-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2.25rem;
+}
+
+.pb-button {
+  align-items: center;
+  background: var(--pb-navy);
+  border: 1px solid var(--pb-navy);
+  border-radius: 0.35rem;
+  color: var(--pb-white) !important;
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.65rem 1rem;
+  text-decoration: none !important;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    transform 150ms ease;
+}
+
+.pb-button:hover,
+.pb-button:focus-visible {
+  background: var(--pb-navy-soft);
+  border-color: var(--pb-navy-soft);
+  transform: translateY(-1px);
+}
+
+.pb-button-secondary {
+  background: transparent;
+  color: var(--pb-navy) !important;
+}
+
+.pb-button-disabled {
+  background: #e8edf3;
+  border-color: #c7d2df;
+  color: #536779 !important;
+  cursor: not-allowed;
+}
+
+.pb-section {
+  margin-top: 3rem;
+}
+
+.pb-section-heading {
+  color: var(--pb-navy);
+  margin-bottom: 0.4rem;
+}
+
+.pb-section-intro {
+  color: var(--pb-slate);
+  margin-bottom: 1.4rem;
+  max-width: 48rem;
+}
+
+.pb-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pb-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pb-card {
+  background: var(--pb-white);
+  border: 1px solid var(--pb-border);
+  border-radius: 0.65rem;
+  box-shadow: 0 8px 24px rgb(16 42 67 / 7%);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.pb-card-image {
+  aspect-ratio: 16 / 9;
+  background: var(--pb-surface);
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.pb-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.15rem;
+}
+
+.pb-card h3 {
+  color: var(--pb-navy);
+  font-size: 1.08rem;
+  line-height: 1.35;
+  margin: 0 0 0.55rem;
+}
+
+.pb-card p {
+  color: var(--pb-slate);
+  line-height: 1.55;
+}
+
+.pb-card .pb-button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.pb-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.pb-metrics li,
+.pb-chip {
+  background: #eef3f8;
+  border-radius: 999px;
+  color: var(--pb-navy-soft);
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.35rem 0.6rem;
+}
+
+.pb-placeholder {
+  border-left: 3px solid var(--pb-accent);
+  color: var(--pb-slate);
+  font-size: 0.88rem;
+  margin: 1rem 0;
+  padding: 0.6rem 0.85rem;
+}
+
+.pb-code-section {
+  border-top: 1px solid var(--pb-border);
+  padding: 2rem 0;
+}
+
+.pb-code-section:first-of-type {
+  border-top: 0;
+}
+
+.pb-scouting-block {
+  background: var(--pb-surface);
+  border: 1px solid var(--pb-border);
+  border-radius: 0.55rem;
+  margin: 1.2rem 0;
+  padding: 1rem 1.15rem;
+}
+
+@media (max-width: 800px) {
+  .pb-grid,
+  .pb-grid-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .pb-grid,
+  .pb-grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .pb-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pb-button {
+    width: 100%;
+  }
+}
+
+html.dark .pb-card,
+html[data-theme="dark"] .pb-card {
+  background: #172b3a;
+  border-color: #334e68;
+}
+
+html.dark .pb-card h3,
+html.dark .pb-section-heading,
+html.dark .pb-lead,
+html[data-theme="dark"] .pb-card h3,
+html[data-theme="dark"] .pb-section-heading,
+html[data-theme="dark"] .pb-lead {
+  color: #f0f4f8;
+}
+
+html.dark .pb-card p,
+html.dark .pb-section-intro,
+html.dark .pb-meta,
+html[data-theme="dark"] .pb-card p,
+html[data-theme="dark"] .pb-section-intro,
+html[data-theme="dark"] .pb-meta {
+  color: #bcccdc;
+}
