@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Panalytics Baseball social preview placeholder">
+  <rect width="1200" height="630" fill="#102a43"/>
+  <circle cx="960" cy="315" r="175" fill="#fff"/>
+  <path d="M835 190c75 52 75 198 0 250M1085 190c-75 52-75 198 0 250" fill="none" stroke="#a63d40" stroke-width="18" stroke-linecap="round"/>
+  <text x="90" y="245" font-family="Arial, sans-serif" font-size="66" font-weight="700" fill="#fff">Panalytics Baseball</text>
+  <text x="90" y="325" font-family="Arial, sans-serif" font-size="38" fill="#d9e2ec">Gabriel Sequera</text>
+  <text x="90" y="390" font-family="Arial, sans-serif" font-size="28" fill="#bcccdc">Baseball Operations · Player Development · Analytics</text>
+  <text x="90" y="555" font-family="Arial, sans-serif" font-size="20" fill="#829ab1">PLACEHOLDER SOCIAL IMAGE — REPLACE WHEN BRAND ASSETS ARE READY</text>
+</svg>

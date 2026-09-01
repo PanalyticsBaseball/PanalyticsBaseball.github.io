@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Gabriel Sequera profile photo placeholder</title>
+  <desc id="desc">A neutral portrait placeholder to be replaced with Gabriel's professional photo.</desc>
+  <rect width="800" height="1000" fill="#e8eef4"/>
+  <circle cx="400" cy="330" r="150" fill="#9fb3c8"/>
+  <path d="M140 920c30-245 135-380 260-380s230 135 260 380" fill="#627d98"/>
+  <rect x="90" y="70" width="620" height="860" rx="24" fill="none" stroke="#102a43" stroke-width="8"/>
+  <text x="400" y="965" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#102a43">[ADD GABRIEL'S PROFESSIONAL PHOTO]</text>
+</svg>

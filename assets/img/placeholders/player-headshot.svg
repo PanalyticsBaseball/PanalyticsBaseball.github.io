@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Player image placeholder">
+  <rect width="1200" height="675" fill="#eef3f8"/>
+  <circle cx="600" cy="235" r="115" fill="#9fb3c8"/>
+  <path d="M340 595c35-190 130-285 260-285s225 95 260 285" fill="#627d98"/>
+  <text x="600" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#102a43">[ADD PLAYER IMAGE]</text>
+</svg>

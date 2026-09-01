@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Pitcher analysis image placeholder">
+  <rect width="1200" height="675" fill="#eef3f8"/>
+  <rect x="390" y="75" width="420" height="525" rx="18" fill="#fff" stroke="#9fb3c8" stroke-width="8"/>
+  <path d="M475 185h250M475 290h250M475 395h250M475 500h250" stroke="#d9e2ec" stroke-width="5"/>
+  <circle cx="535" cy="250" r="28" fill="#a63d40"/><circle cx="660" cy="355" r="28" fill="#102a43"/><circle cx="575" cy="460" r="28" fill="#627d98"/>
+  <text x="600" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#102a43">[ADD PITCHER ANALYSIS VISUAL]</text>
+</svg>
