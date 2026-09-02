@@ -10,6 +10,14 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# This portfolio intentionally excludes the demo blog and all demo posts. The
+# comment fixtures therefore do not exist in the generated site, so there is no
+# comments integration surface to test.
+if grep -qE '^[[:space:]]*-[[:space:]]*_posts/' _config.yml; then
+  echo "comments integration checks skipped: blog posts are excluded"
+  exit 0
+fi
+
 cat >"${tmp_override}" <<'YAML'
 giscus:
   repo: alshedivat/al-folio
