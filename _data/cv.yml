@@ -1,10 +1,7 @@
 cv:
   name: Gabriel Sequera
-  label: Baseball Operations | Player Development | Baseball Analytics
-  email: "" # [ADD EMAIL]
+  headline: Baseball Operations | Player Development | Baseball Analytics
   location: New Jersey, USA
-  image: ""
-  summary: "[ADD AN APPROVED 2–3 LINE PROFESSIONAL SUMMARY BASED ON GABRIEL'S RESUME]"
 
   social_networks:
     - network: GitHub
@@ -12,47 +9,40 @@ cv:
     # Add LinkedIn only after confirming the public profile URL.
 
   sections:
+    Professional Summary:
+      - "[ADD AN APPROVED 2–3 LINE PROFESSIONAL SUMMARY BASED ON GABRIEL'S RESUME]"
+
     Experience:
       - company: "[ADD ORGANIZATION]"
         position: "[ADD POSITION]"
         location: "[ADD LOCATION]"
-        start_date: "[ADD START DATE]"
-        end_date: "[ADD END DATE OR PRESENT]"
         summary: "[ADD VERIFIED RESPONSIBILITIES AND IMPACT FROM GABRIEL'S RESUME]"
         highlights:
-          - "[ADD EVIDENCE-BASED ACCOMPLISHMENT]"
+          - "[ADD DATES AND AN EVIDENCE-BASED ACCOMPLISHMENT]"
 
     Education:
       - institution: "[ADD INSTITUTION]"
         location: "[ADD LOCATION]"
         area: "[ADD FIELD OF STUDY]"
-        studyType: "[ADD DEGREE OR CREDENTIAL]"
-        start_date: "[ADD START DATE]"
-        end_date: "[ADD END DATE]"
+        degree: "[ADD DEGREE OR CREDENTIAL]"
         highlights:
-          - "[ADD RELEVANT COURSEWORK, RESEARCH, OR DISTINCTION IF APPLICABLE]"
+          - "[ADD DATES, RELEVANT COURSEWORK, RESEARCH, OR DISTINCTION IF APPLICABLE]"
 
     Baseball Experience:
       - company: "[ADD BASEBALL ORGANIZATION]"
         position: "[ADD BASEBALL ROLE]"
         location: "[ADD LOCATION]"
-        start_date: "[ADD START DATE]"
-        end_date: "[ADD END DATE OR PRESENT]"
         summary: "[ADD VERIFIED BASEBALL OPERATIONS, COACHING, SCOUTING, OR PLAYER DEVELOPMENT EXPERIENCE]"
         highlights:
-          - "[ADD VERIFIED RESPONSIBILITY OR CONTRIBUTION]"
+          - "[ADD DATES AND A VERIFIED RESPONSIBILITY OR CONTRIBUTION]"
 
     Technical Skills:
-      - name: R Programming
-        level: "[ADD PROFICIENCY ONLY IF DESIRED]"
-        icon: fa-solid fa-code
-        keywords: "R, tidyverse, ggplot2, Shiny, [ADD VERIFIED PACKAGES OR WORKFLOWS]"
+      - label: R Programming
+        details: "R, tidyverse, ggplot2, Shiny, [ADD VERIFIED PACKAGES OR WORKFLOWS]"
 
     Analytics Tools:
-      - name: Baseball Analytics
-        level: "[ADD PROFICIENCY ONLY IF DESIRED]"
-        icon: fa-solid fa-chart-line
-        keywords: "[ADD VERIFIED DATA SOURCES, VISUALIZATION TOOLS, TRACKING TECHNOLOGY, AND ANALYTICS PLATFORMS]"
+      - label: Baseball Analytics
+        details: "[ADD VERIFIED DATA SOURCES, VISUALIZATION TOOLS, TRACKING TECHNOLOGY, AND ANALYTICS PLATFORMS]"
 
     Relevant Projects:
       - name: Baseball Analytics Shiny App
