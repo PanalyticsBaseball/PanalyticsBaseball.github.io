@@ -13,6 +13,13 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# These plugin checks exercise RTL and Marimo demo posts. This portfolio does
+# not publish demo posts, so the fixtures are intentionally unavailable.
+if grep -qE '^[[:space:]]*-[[:space:]]*_posts/' _config.yml; then
+  echo "demo-post plugin checks skipped: demo posts are excluded"
+  exit 0
+fi
+
 build() {
   local name="$1"
   shift

@@ -10,6 +10,13 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# Distill is not part of this portfolio and its demo posts are intentionally
+# excluded. Skip the fixture-based integration check when no posts are built.
+if grep -qE '^[[:space:]]*-[[:space:]]*_posts/' _config.yml; then
+  echo "distill integration checks skipped: demo posts are excluded"
+  exit 0
+fi
+
 cat >"${tmp_override}" <<'YAML'
 giscus:
   repo: alshedivat/al-folio
