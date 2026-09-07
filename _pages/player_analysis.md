@@ -63,4 +63,4 @@ children:
   </div>
 </section>
 
-<p class="pb-placeholder"><strong>Placeholder policy:</strong> All six profiles are structural examples. Add real player names, teams, metrics, images, and original analysis only when the underlying work is ready.</p>
+<p class="pb-placeholder"><strong>Analysis status:</strong> The six requested players are listed. Positions for hitters, player images, verified metrics, sample context, charts, and Gabriel's original analysis remain explicit placeholders.</p>

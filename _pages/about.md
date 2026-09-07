@@ -7,13 +7,12 @@ nav_order: 1
 description: Gabriel Sequera combines practical baseball experience with R, Shiny, and data-informed player evaluation.
 profile:
   align: right
-  image: gabriel-profile-placeholder.svg
+  image: gabriel-sequera.jpeg
   image_circular: false
   more_info: >
     <p><strong>New Jersey, USA</strong></p>
-    <p>[ADD PROFESSIONAL PHOTO]</p>
 selected_papers: false
-social: false
+social: true
 announcements:
   enabled: false
 latest_posts:
@@ -30,15 +29,15 @@ latest_posts:
   Gabriel Sequera is a baseball professional focused on the intersection of practical baseball knowledge, player development, and data analysis. His work uses R, Shiny, visual analysis, and baseball context to turn information into clear evaluations and actionable decisions for Baseball Operations and Player Development environments.
 </p>
 
-<p class="pb-meta">Based in New Jersey, USA · Open to opportunities across professional baseball</p>
+<p class="pb-meta">Based in New Jersey, USA · English (fluent) · Spanish (native)</p>
 
 <div class="pb-actions" aria-label="Professional links">
-  <span class="pb-button pb-button-disabled" aria-disabled="true">LinkedIn · [ADD LINKEDIN URL]</span>
+  <a class="pb-button" href="https://www.linkedin.com/in/gabriel-sequera/" target="_blank" rel="noopener">LinkedIn</a>
   <a class="pb-button pb-button-secondary" href="https://github.com/PanalyticsBaseball" target="_blank" rel="noopener">GitHub</a>
-  <span class="pb-button pb-button-secondary pb-button-disabled" aria-disabled="true">Email · [ADD EMAIL]</span>
+  <a class="pb-button pb-button-secondary" href="mailto:panalyticsbaseball@gmail.com">Email</a>
 </div>
 
-<p class="pb-placeholder"><strong>Content note:</strong> Replace the profile image and refine this introduction once Gabriel's final professional biography is approved.</p>
+<p class="pb-section-intro">Gabriel's background includes Baseball Operations roles with the Somerset Patriots and New Jersey Jackals, athletics operations at Saint Peter's University, and experience as a collegiate catcher and strength and conditioning coach.</p>
 
 <section class="pb-section" aria-labelledby="featured-work">
   <h2 id="featured-work" class="pb-section-heading">Featured Work</h2>
@@ -46,29 +45,29 @@ latest_posts:
 
   <div class="pb-grid">
     <article class="pb-card">
-      <img class="pb-card-image" src="{{ '/assets/img/placeholders/shiny-app.svg' | relative_url }}" alt="Placeholder for the Baseball Analytics Shiny App screenshot">
+      <img class="pb-card-image" src="{{ '/assets/img/panalytics-prospects.png' | relative_url }}" alt="Panalytics Prospects R Shiny pitcher performance dashboard">
       <div class="pb-card-body">
-        <h3>Baseball Analytics Shiny App</h3>
-        <p>An interactive R and Shiny project designed to present baseball data through recruiter-friendly visuals and comparisons.</p>
-        <a class="pb-button" href="{{ '/projects/baseball-analytics-shiny-app/' | relative_url }}">View Project</a>
+        <h3>Panalytics Prospects</h3>
+        <p>An interactive R Shiny application for exploring rookie pitcher performance across MLB and the Minor Leagues.</p>
+        <a class="pb-button" href="{{ '/projects/panalytics-prospects/' | relative_url }}">View Project</a>
       </div>
     </article>
 
     <article class="pb-card">
-      <img class="pb-card-image" src="{{ '/assets/img/placeholders/hitter-analysis.svg' | relative_url }}" alt="Placeholder for a hitter analysis visual">
+      <img class="pb-card-image" src="{{ '/assets/img/athlete-lab.png' | relative_url }}" alt="Athlete Lab R Shiny application showing a pitcher arsenal and location report">
       <div class="pb-card-body">
-        <h3>Hitter Analysis</h3>
-        <p>Structured offensive evaluation combining performance indicators, visual evidence, and player-development context.</p>
-        <a class="pb-button" href="{{ '/player-analysis/hitters/' | relative_url }}">Explore Hitters</a>
+        <h3>Athlete Lab</h3>
+        <p>Gabriel's first R Shiny application and the foundation for his work in interactive baseball reporting.</p>
+        <a class="pb-button" href="{{ '/projects/athlete-lab/' | relative_url }}">View Project</a>
       </div>
     </article>
 
     <article class="pb-card">
-      <img class="pb-card-image" src="{{ '/assets/img/placeholders/pitcher-analysis.svg' | relative_url }}" alt="Placeholder for a pitcher analysis visual">
+      <img class="pb-card-image" src="{{ '/assets/img/marlins-sports-intelligence.png' | relative_url }}" alt="Miami Marlins Sports Intelligence R Shiny application">
       <div class="pb-card-body">
-        <h3>Pitcher Analysis</h3>
-        <p>Pitcher profiles organized around arsenal characteristics, results, visual analysis, and development implications.</p>
-        <a class="pb-button" href="{{ '/player-analysis/pitchers/' | relative_url }}">Explore Pitchers</a>
+        <h3>Miami Marlins Prospect Report</h3>
+        <p>An interactive report designed to make prospect information easier to explore and communicate.</p>
+        <a class="pb-button" href="{{ '/projects/marlins-sports-intelligence/' | relative_url }}">View Project</a>
       </div>
     </article>
 

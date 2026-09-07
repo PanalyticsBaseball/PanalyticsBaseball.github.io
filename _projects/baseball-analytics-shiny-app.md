@@ -1,26 +1,24 @@
 ---
 layout: page
-title: Baseball Analytics Shiny App
-description: An interactive baseball analytics workspace built to make player data easier to explore, compare, and communicate.
-img: /assets/img/placeholders/shiny-app.svg
+title: Panalytics Prospects
+description: An interactive R Shiny application for exploring rookie pitcher performance across Major League Baseball and the Minor Leagues.
+img: /assets/img/panalytics-prospects.png
 importance: 1
 category: analytics
-permalink: /projects/baseball-analytics-shiny-app/
+permalink: /projects/panalytics-prospects/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/panalytics.css' | relative_url }}">
 
-![Placeholder for the Baseball Analytics Shiny App interface]({{ '/assets/img/placeholders/shiny-app.svg' | relative_url }})
-
-<div class="pb-placeholder"><strong>Placeholder:</strong> Replace this image with a current application screenshot and add the live ShinyApps and GitHub URLs below.</div>
+![Panalytics Prospects pitcher performance dashboard]({{ '/assets/img/panalytics-prospects.png' | relative_url }})
 
 ## Project overview
 
-This project is designed as an interactive baseball analytics application that helps users move from raw player data to clear, visual comparisons. The final description should explain the baseball question the application solves, its intended users, and the decisions it is meant to support.
+Panalytics Prospects is an interactive R Shiny application designed to explore and evaluate rookie pitchers across Major League Baseball and the Minor Leagues. It brings performance data, visualizations, filters, and interactive reporting into one web-based tool.
 
 ## Objective
 
-[ADD THE SPECIFIC BASEBALL QUESTION, WORKFLOW, OR PLAYER-DEVELOPMENT OBJECTIVE ADDRESSED BY THE APP]
+Make it easier to compare pitchers across professional levels, identify promising profiles, and communicate development questions through an accessible interface.
 
 ## Tools and technologies
 
@@ -31,14 +29,11 @@ This project is designed as an interactive baseball analytics application that h
   <span class="pb-chip">ggplot2</span>
 </div>
 
-## What to include next
+## Current scope
 
-- The source and scope of the data.
-- The main dashboards, filters, and visualizations.
-- One or two examples of how a coach, analyst, or Baseball Operations user could apply the app.
-- Technical decisions that demonstrate Gabriel's R and Shiny capabilities.
+The application supports player selection, age and team filtering, percentile-based performance summaries, and a searchable leaderboard. Any player-specific conclusions remain inside the application and should be interpreted with their sample and data context.
 
 <div class="pb-actions">
-  <span class="pb-button pb-button-disabled" aria-disabled="true">Launch App · [ADD SHINY APP URL]</span>
+  <a class="pb-button" href="https://panalyticsprospects.shinyapps.io/prospect/" target="_blank" rel="noopener">Launch App</a>
   <span class="pb-button pb-button-disabled" aria-disabled="true">View Code · [ADD GITHUB URL]</span>
 </div>

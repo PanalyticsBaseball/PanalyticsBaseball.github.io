@@ -1,54 +1,117 @@
 cv:
   name: Gabriel Sequera
   headline: Baseball Operations | Player Development | Baseball Analytics
-  location: New Jersey, USA
+  location: Clifton, New Jersey
+  email: gabriel.sequera@gmail.com
 
   social_networks:
+    - network: LinkedIn
+      username: gabriel-sequera
     - network: GitHub
-      username: PananalyticsBaseball
-    # Add LinkedIn only after confirming the public profile URL.
+      username: PanalyticsBaseball
 
   sections:
     Professional Summary:
-      - "[ADD AN APPROVED 2–3 LINE PROFESSIONAL SUMMARY BASED ON GABRIEL'S RESUME]"
+      - Baseball operations and athletics professional with experience supporting facility readiness, game-day operations, performance-data workflows, and player-development reporting. Combines practical baseball experience with R, Python, SQL, and sports technology.
 
-    Experience:
-      - company: "[ADD ORGANIZATION]"
-        position: "[ADD POSITION]"
-        location: "[ADD LOCATION]"
-        summary: "[ADD VERIFIED RESPONSIBILITIES AND IMPACT FROM GABRIEL'S RESUME]"
+    Professional Experience:
+      - company: New York Yankees, Somerset Patriots (Double-A Affiliate)
+        position: Baseball Operations Manager
+        location: Bridgewater, New Jersey
+        start_date: 2023-04
+        end_date: 2025-09
+        summary: Managed ballpark logistics, facility readiness, game-day personnel, vendors, and operational support in a Double-A environment.
         highlights:
-          - "[ADD DATES AND AN EVIDENCE-BASED ACCOMPLISHMENT]"
+          - Supported alignment with MLB Player Development League standards and safety requirements.
+          - Produced visual and video assets for operational briefings and marketing initiatives.
+          - Served as a liaison for the Vice President of Operations and helped manage game-day personnel and vendors.
+
+      - company: Saint Peter's University Facilities, Operations, & Recreational Life
+        position: Assistant Director
+        location: Jersey City, New Jersey
+        start_date: 2022-09
+        end_date: 2024-05
+        summary: Supported athletics operations and transformed sports-technology data into usable performance information for coaching staff.
+        highlights:
+          - Developed R and Python workflows to clean, process, and analyze sports-technology datasets.
+          - Directed game-day video and statistical capture and maintained access to performance data.
+          - Produced reports connecting performance information with player-development and training decisions.
+
+      - company: New Jersey Jackals
+        position: Baseball Operations Intern
+        location: Woodland Park, New Jersey
+        start_date: 2019-06
+        end_date: 2019-09
+        summary: Supported front-office administration, game-day operations, and baseball logistics for an independent professional club.
+        highlights:
+          - Tracked player transactions, active rosters, and scouting reports.
+          - Supported event staffing, facility setup, travel, equipment, and scouting logistics.
 
     Education:
-      - institution: "[ADD INSTITUTION]"
-        location: "[ADD LOCATION]"
-        area: "[ADD FIELD OF STUDY]"
-        degree: "[ADD DEGREE OR CREDENTIAL]"
-        highlights:
-          - "[ADD DATES, RELEVANT COURSEWORK, RESEARCH, OR DISTINCTION IF APPLICABLE]"
+      - institution: Saint Peter's University
+        location: Jersey City, New Jersey
+        area: American Studies & Sports Management
+        degree: Bachelor of Arts
+        start_date: 2022-09
+        end_date: 2024-05
+      - institution: Bergen Community College
+        location: Paramus, New Jersey
+        area: Sports Management
+        degree: Associate's Degree
+        start_date: 2018-09
+        end_date: 2020-05
+
+    Certifications:
+      - name: Sports Coding & Data Integration
+        date: 2024
+        issuer: Athletic Lab
+      - name: Certified Hitting Coach
+        date: 2024
+        issuer: BlastMotion (ABL)
+      - name: Baseball GM & Scouting Certification
+        date: 2021
+        issuer: Sports Management Worldwide
 
     Baseball Experience:
-      - company: "[ADD BASEBALL ORGANIZATION]"
-        position: "[ADD BASEBALL ROLE]"
-        location: "[ADD LOCATION]"
-        summary: "[ADD VERIFIED BASEBALL OPERATIONS, COACHING, SCOUTING, OR PLAYER DEVELOPMENT EXPERIENCE]"
-        highlights:
-          - "[ADD DATES AND A VERIFIED RESPONSIBILITY OR CONTRIBUTION]"
+      - company: Bergen Community College
+        position: JUCO Baseball Catcher
+        location: Paramus, New Jersey
+        start_date: 2019
+        end_date: 2020
+      - company: GBA Baseball Academy
+        position: Strength and Conditioning Coach
+        location: Caracas, Venezuela
+        start_date: 2014
+        end_date: 2016
 
     Technical Skills:
-      - label: R Programming
-        details: "R, tidyverse, ggplot2, Shiny, [ADD VERIFIED PACKAGES OR WORKFLOWS]"
-
-    Analytics Tools:
-      - label: Baseball Analytics
-        details: "[ADD VERIFIED DATA SOURCES, VISUALIZATION TOOLS, TRACKING TECHNOLOGY, AND ANALYTICS PLATFORMS]"
+      - label: Analytics & Programming
+        details: Python, R, SQL
+      - label: Baseball Technologies
+        details: TrackMan, BlastMotion, Rapsodo, BAT Software
+      - label: Operations & Administration
+        details: Budgeting, data entry, player logistics, staff logistics, Microsoft Office Suite
+      - label: Languages
+        details: English (fluent), Spanish (native)
 
     Relevant Projects:
-      - name: Baseball Analytics Shiny App
-        summary: "[ADD THE VERIFIED PROJECT OBJECTIVE AND USER VALUE]"
+      - name: Panalytics Prospects
+        summary: Interactive R Shiny application for exploring rookie pitcher performance across MLB and the Minor Leagues.
         highlights:
           - "R"
           - "Shiny"
-          - "tidyverse"
-          - "ggplot2"
+          - "Data Visualization"
+          - "Baseball Analytics"
+      - name: Athlete Lab
+        summary: First R Shiny application, created as a hands-on foundation in interactive data applications.
+        highlights:
+          - "R"
+          - "Shiny"
+          - "Interactive Applications"
+      - name: Miami Marlins Prospect Report
+        summary: Interactive report for exploring player performance and prospect information.
+        highlights:
+          - "R"
+          - "Shiny"
+          - "Data Analysis"
+          - "Data Visualization"

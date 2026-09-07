@@ -1,18 +1,19 @@
 ---
-title: Pitcher Placeholder 03
+title: Bubba Chandler
 player_type: pitcher
 order: 3
-team: "[ADD TEAM]"
-position: "[ADD ROLE]"
+team: Pittsburgh Pirates
+position: Pitcher
 image: /assets/img/placeholders/player-headshot.svg
 metrics: ["[ADD METRIC 1]", "[ADD METRIC 2]", "[ADD METRIC 3]"]
-summary: "[ADD A ONE- OR TWO-LINE SUMMARY BASED ON GABRIEL'S ORIGINAL ANALYSIS]"
-description: Placeholder structure for a future pitcher evaluation.
+summary: "Player profile reserved for Gabriel's original, evidence-based analysis. Metrics and conclusions are pending."
+description: Analysis placeholder for Bubba Chandler.
+permalink: /player-analysis/bubba-chandler/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/panalytics.css' | relative_url }}">
 
-<div class="pb-placeholder"><strong>Placeholder profile:</strong> Replace every bracketed field with verified player information and Gabriel's original analysis before publishing as completed work.</div>
+<div class="pb-placeholder"><strong>Analysis pending:</strong> The player and team were supplied for this portfolio. Metrics, charts, sample context, and Gabriel's original evaluation still need to be added.</div>
 
 ## Player Overview
 

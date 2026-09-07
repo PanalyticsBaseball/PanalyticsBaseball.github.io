@@ -12,7 +12,7 @@ horizontal: false
 
 <p class="pb-lead">Selected work demonstrating how Gabriel uses data, visual communication, and baseball context to support evaluation and decision-making.</p>
 
-<div class="pb-placeholder"><strong>Portfolio status:</strong> The first project is structured and ready for the final ShinyApps URL, source-code URL, and application screenshot.</div>
+<div class="pb-placeholder"><strong>Source code status:</strong> Live applications and verified screenshots are available. Repository links will be added after the source code is released.</div>
 
 <div class="projects pb-section">
   {% assign sorted_projects = site.projects | sort: "importance" %}

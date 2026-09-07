@@ -13,16 +13,16 @@ description: >
 author: Gabriel Sequera
 footer_text: >
   <strong>Panalytics Baseball</strong> ·
-  <span>LinkedIn [ADD LINKEDIN URL]</span> ·
+  <a href="https://www.linkedin.com/in/gabriel-sequera/" target="_blank" rel="noopener">LinkedIn</a> ·
   <a href="https://github.com/PanalyticsBaseball" target="_blank" rel="noopener">GitHub</a> ·
-  <span>Email [ADD EMAIL]</span> ·
+  <a href="mailto:panalyticsbaseball@gmail.com">Email</a> ·
   Built with GitHub Pages
 keywords: baseball operations, player development, baseball analytics, scouting, R, Shiny, Gabriel Sequera, Panalytics Baseball
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: panalytics-favicon.svg
 apple_touch_icon:
 
-url: https://PanalyticsBaseball.github.io # the base hostname & protocol for your site
+url: https://panalyticsbaseball.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
