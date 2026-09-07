@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://PanalyticsBaseball.github.io/sitemap.xml
+Sitemap: https://panalyticsbaseball.github.io/sitemap.xml
