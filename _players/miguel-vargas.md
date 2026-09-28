@@ -18,13 +18,25 @@ permalink: /player-analysis/miguel-vargas/
 
 <p class="pb-eyebrow">Batter R&amp;D Case Study · Updated through September 25, 2026</p>
 
+<ul class="pb-metrics" aria-label="Miguel Vargas key metrics">
+  <li>.269 AVG</li>
+  <li>.374 OBP</li>
+  <li>.458 SLG</li>
+  <li>.832 OPS</li>
+  <li>.370 wOBA</li>
+  <li>.381 xwOBA</li>
+</ul>
+
 ## Executive Summary
 
 Miguel Vargas's 2026 breakout is supported by meaningful changes in both physical output and plate discipline. His reconstructed xwOBA increased from .319 to .381, Barrel% rose from 9.4% to 13.1%, and BB% climbed from 9.8% to 14.0%. At the same time, his Whiff% remained essentially unchanged. Baseball Savant also reports that his average bat speed increased from 70.6 mph to 74.0 mph.
 
 The combined evidence points to a hitter who is swinging harder, choosing his opportunities more carefully, and producing more damaging contact without paying a major swing-and-miss penalty. The second-half decline in expected production and contact quality is an important caution, but it does not erase the broader year-over-year improvement.
 
-![Miguel Vargas production and expected production comparison]({{ '/assets/img/player-analysis/miguel-vargas/01-production-and-expected.png' | relative_url }})
+<figure class="pb-report-figure">
+  <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/miguel-vargas/01-production-and-expected.png' | relative_url }}" alt="Miguel Vargas observed and expected offensive production in 2025 and 2026">
+  <figcaption>Vargas's observed and expected production both improved substantially in 2026.</figcaption>
+</figure>
 
 ## 1. Why Did He Improve?
 
@@ -40,7 +52,10 @@ The improvement was not driven by one statistic. It came from a stronger combina
 
 The central finding is that Vargas added bat speed and impact without materially damaging his contact rate.
 
-![Miguel Vargas process metrics, 2025 versus 2026]({{ '/assets/img/player-analysis/miguel-vargas/02-process-change.png' | relative_url }})
+<figure class="pb-report-figure pb-report-figure-compact">
+  <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/miguel-vargas/02-process-change.png' | relative_url }}" alt="Miguel Vargas plate-discipline and contact-quality metrics in 2025 and 2026">
+  <figcaption>Vargas added impact and on-base value without a meaningful increase in swing-and-miss.</figcaption>
+</figure>
 
 ## 2. Is the Improvement Sustainable?
 
@@ -55,7 +70,10 @@ The main risk is the second-half trend. From the first half to the second half o
 
 This suggests that Vargas's new baseline is likely above his 2025 level, but the first-half peak should not automatically be treated as his established true talent.
 
-![Miguel Vargas first-half and second-half sustainability indicators]({{ '/assets/img/player-analysis/miguel-vargas/03-second-half-check.png' | relative_url }})
+<figure class="pb-report-figure">
+  <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/miguel-vargas/03-second-half-check.png' | relative_url }}" alt="Miguel Vargas first-half and second-half expected production and contact-quality indicators">
+  <figcaption>The second-half decline creates a sustainability concern without erasing the broader year-over-year improvement.</figcaption>
+</figure>
 
 ## 3. Did His Approach Change?
 
@@ -63,7 +81,10 @@ Yes. The change appears to combine a physical gain with a more selective offensi
 
 Baseball Savant reports a 3.4 mph increase in average bat speed. Vargas also produced a higher walk rate, offered slightly less frequently outside the strike zone, and maintained his Whiff% despite the harder swing. This is consistent with a hitter who is taking fewer low-value swings and creating more impact when he chooses to attack.
 
-![Miguel Vargas average bat speed, 2025 versus 2026]({{ '/assets/img/player-analysis/miguel-vargas/04-bat-speed.png' | relative_url }})
+<figure class="pb-report-figure pb-report-figure-compact">
+  <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/miguel-vargas/04-bat-speed.png' | relative_url }}" alt="Miguel Vargas average bat speed in 2025 and 2026">
+  <figcaption>The 3.4 mph increase in average bat speed supplied an important physical foundation for the breakout.</figcaption>
+</figure>
 
 ## 4. What Should He Work On?
 
@@ -77,7 +98,10 @@ Specific development targets:
 - Monitor whether added swing intent lengthens the swing against velocity or two-strike pitches.
 - Build a repeatable plan for periods when pitchers reduce fastball exposure.
 
-![Miguel Vargas results and decisions by pitch family]({{ '/assets/img/player-analysis/miguel-vargas/05-pitch-family.png' | relative_url }})
+<figure class="pb-report-figure">
+  <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/miguel-vargas/05-pitch-family.png' | relative_url }}" alt="Miguel Vargas offensive results and swing decisions by Statcast pitch family">
+  <figcaption>Pitch-family results identify offspeed recognition as the clearest remaining development opportunity.</figcaption>
+</figure>
 
 ## 5. How Should the Team Use Him?
 
