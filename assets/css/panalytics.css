@@ -187,6 +187,34 @@
   padding: 1rem 1.15rem;
 }
 
+.pb-report-figure {
+  margin: 1.75rem auto 2.5rem;
+  max-width: 52rem;
+}
+
+.pb-report-figure-compact {
+  max-width: 42rem;
+}
+
+.pb-report-chart {
+  background: var(--pb-white);
+  border: 1px solid var(--pb-border);
+  border-radius: 0.55rem;
+  box-shadow: 0 8px 24px rgb(16 42 67 / 7%);
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.pb-report-figure figcaption {
+  color: var(--pb-slate);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 0.65rem auto 0;
+  max-width: 46rem;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .pb-grid,
   .pb-grid-two {
@@ -211,7 +239,9 @@
 }
 
 html.dark .pb-card,
-html[data-theme="dark"] .pb-card {
+html.dark .pb-report-chart,
+html[data-theme="dark"] .pb-card,
+html[data-theme="dark"] .pb-report-chart {
   background: #172b3a;
   border-color: #334e68;
 }
@@ -226,9 +256,11 @@ html[data-theme="dark"] .pb-lead {
 }
 
 html.dark .pb-card p,
+html.dark .pb-report-figure figcaption,
 html.dark .pb-section-intro,
 html.dark .pb-meta,
 html[data-theme="dark"] .pb-card p,
+html[data-theme="dark"] .pb-report-figure figcaption,
 html[data-theme="dark"] .pb-section-intro,
 html[data-theme="dark"] .pb-meta {
   color: #bcccdc;

@@ -1,0 +1,185 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Willson Contreras | Panalytics Baseball | Gabriel Sequera </title> <meta name="author" content="Gabriel Sequera"> <meta name="description" content="How did Willson Contreras build an impact offensive season in Boston, and which parts of the profile are sustainable?"> <meta name="keywords" content="baseball operations, player development, baseball analytics, scouting, R, Shiny, Gabriel Sequera, Panalytics Baseball"> <meta property="og:site_name" content="Panalytics Baseball | Gabriel Sequera"> <meta property="og:type" content="website"> <meta property="og:title" content="Panalytics Baseball | Gabriel Sequera | Willson Contreras"> <meta property="og:url" content="https://panalyticsbaseball.github.io/player-analysis/willson-contreras/"> <meta property="og:description" content="How did Willson Contreras build an impact offensive season in Boston, and which parts of the profile are sustainable?"> <meta property="og:image" content="https://panalyticsbaseball.github.io/assets/img/panalytics-og-placeholder.svg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Willson Contreras"> <meta name="twitter:description" content="How did Willson Contreras build an impact offensive season in Boston, and which parts of the profile are sustainable?"> <meta name="twitter:image" content="https://panalyticsbaseball.github.io/assets/img/panalytics-og-placeholder.svg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Gabriel Sequera"
+        },
+        "url": "https://panalyticsbaseball.github.io/player-analysis/willson-contreras/",
+        "@type": "WebSite",
+        "description": "How did Willson Contreras build an impact offensive season in Boston, and which parts of the profile are sustainable?",
+        "headline": "Willson Contreras",
+        
+        "sameAs": ["https://github.com/PanalyticsBaseball","https://www.linkedin.com/in/gabriel-sequera"],
+        
+        "name": "Gabriel Sequera",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/panalytics-favicon.svg?v=cfe28127ef13f09f5dcbd88eac6f9685"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://panalyticsbaseball.github.io/player-analysis/willson-contreras/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Panalytics Baseball | Gabriel Sequera </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Projects </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">Player Analysis </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/player-analysis/">Overview</a> <a class="dropdown-item " href="/player-analysis/hitters/">Hitters</a> <a class="dropdown-item " href="/player-analysis/pitchers/">Pitchers</a> </div> </li> <li class="nav-item "> <a class="nav-link" href="/articles/">Articles </a> </li> <li class="nav-item "> <a class="nav-link" href="/r-code/">R Code </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">Resume / CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Willson Contreras</h1> <p class="post-description">How did Willson Contreras build an impact offensive season in Boston, and which parts of the profile are sustainable?</p> </header> <article> <link rel="stylesheet" href="/assets/css/panalytics.css"> <p class="pb-eyebrow">Batter R&amp;D Case Study · Data through September 17, 2026</p> <ul class="pb-metrics" aria-label="Willson Contreras key metrics"> <li>.276 AVG</li> <li>.387 OBP</li> <li>.518 SLG</li> <li>.905 OPS</li> <li>.405 wOBA</li> <li>.377 xwOBA</li> </ul> <h2 id="executive-summary">Executive Summary</h2> <p>Willson Contreras produced an impact offensive season through September 17, combining on-base ability with pull-side power and strong production against left-handed pitching. His .276/.387/.518 line and .905 OPS were better than the reconstructed expected indicators, but a .377 xwOBA still supports a high-quality offensive profile.</p> <p>The key sustainability concern is not a loss of bat speed. His average bat speed held during the second half while exit velocity, HardHit%, Barrel%, and xwOBA declined. That divergence points toward contact precision, timing, pitch mix, health, or interrupted rhythm rather than a loss of raw physical ability.</p> <p>Fenway Park amplified the results, but it did not create the underlying power strategy. Contreras hit 14 home runs at home and 13 on the road; 21 of the 27 were pulled. The most actionable strengths are his pull-side damage, production against left-handed pitching, and coverage of the middle and lower strike zone. His clearest development targets are breaking-ball swing-and-miss and fastballs in Zone 1.</p> <h2 id="1-where-did-the-damage-come-from">1. Where Did the Damage Come From?</h2> <p>Contreras was not dependent on one isolated hot zone. His best expected production came in the middle and lower parts of the strike zone:</p> <ul> <li>Zone 8: .569 xwOBA and .872 SLG.</li> <li>Zone 5: .490 xwOBA and .727 SLG.</li> <li>Zone 6: .480 xwOBA and .674 SLG.</li> <li>Zone 9: .448 xwOBA and .921 SLG.</li> </ul> <p>This coverage allowed him to punish mistakes in several locations while converting pull-side contact into extra-base impact.</p> <figure class="pb-report-figure pb-report-figure-compact"> <img class="pb-report-chart" src="/assets/img/player-analysis/willson-contreras/09-xwoba-by-zone.png" alt="Willson Contreras expected weighted on-base average by Statcast strike-zone location"> <figcaption>Expected production by the location of the pitch that ended the at-bat. Blue zones were below his in-zone xwOBA; warm zones were above it.</figcaption> </figure> <h2 id="2-is-the-performance-sustainable">2. Is the Performance Sustainable?</h2> <p>The full-season production is supported by meaningful impact contact, but the second-half direction was less stable:</p> <ul> <li>OPS declined from .921 to .867.</li> <li>xwOBA declined from .390 to .348.</li> <li>Average exit velocity declined from 90.6 mph to 87.3 mph.</li> <li>HardHit% declined from 47.1% to 37.4%.</li> <li>Barrel% declined from 14.3% to 11.0%.</li> <li>Average bat speed held, moving from 74.4 mph to 74.9 mph.</li> </ul> <p>The overall offensive level is credible, but sustaining the first-half damage requires recovering contact precision rather than simply swinging harder.</p> <figure class="pb-report-figure"> <img class="pb-report-chart" src="/assets/img/player-analysis/willson-contreras/03-contact-quality-by-half.png" alt="Willson Contreras contact quality and bat speed in the first and second halves of 2026"> <figcaption>Contact quality declined in the second half even though average bat speed remained stable.</figcaption> </figure> <h2 id="3-did-his-approach-change">3. Did His Approach Change?</h2> <p>His second-half BB% increased from 9.6% to 14.2%, helping OBP rise from .379 to .405 even as AVG and SLG declined. The underlying swing decisions, however, did not show the same improvement:</p> <ul> <li>Chase% moved from 33.5% to 34.5%.</li> <li>Zone-swing rate remained nearly unchanged at 67.6% and 67.4%.</li> <li>Whiff% increased from 28.7% to 30.0%.</li> </ul> <p>The plate-appearance outcomes changed more clearly than the overall swing-selection profile. More walks may reflect how opponents pitched him, count distribution, or selective gains in particular situations, but the evidence does not support a universal improvement in swing decisions.</p> <figure class="pb-report-figure"> <img class="pb-report-chart" src="/assets/img/player-analysis/willson-contreras/02-monthly-approach.png" alt="Willson Contreras monthly walk, strikeout, chase, and whiff rates in 2026"> <figcaption>The increase in walks did not come from a simple season-long reduction in chase rate.</figcaption> </figure> <h2 id="4-how-much-did-fenway-and-pull-power-matter">4. How Much Did Fenway and Pull Power Matter?</h2> <p>Contreras produced a 1.009 OPS at Fenway and an .807 OPS on the road. His home AVG was .323 compared with .231 away, while average exit velocity was 91.0 mph at home and 88.3 mph away.</p> <p>The home-run distribution adds important context. He hit 14 home runs at Fenway and 13 on the road. Of his 27 home runs, 21 were pulled, including 12 of 14 at home. His pull rate on tracked batted balls was similar at home and away: 54.5% at home and 52.8% away.</p> <p>Fenway amplified Contreras’s overall production, but the underlying pull-power strategy traveled. The park should be treated as a favorable fit, not the sole explanation for the season.</p> <figure class="pb-report-figure"> <img class="pb-report-chart" src="/assets/img/player-analysis/willson-contreras/08-home-run-direction.png" alt="Willson Contreras home runs by direction at Fenway Park and on the road"> <figcaption>Pull-side power accounted for most of his home runs in both environments.</figcaption> </figure> <h2 id="5-how-should-boston-use-him">5. How Should Boston Use Him?</h2> <p>Contreras remained productive against both pitcher hands, but left-handed pitching unlocked his best combination of power and discipline:</p> <ul> <li>.981 OPS against LHP and .878 against RHP.</li> <li>18.8% K% against LHP and 27.4% against RHP.</li> <li>16.7% BB% against LHP and 9.0% against RHP.</li> <li>17.0% Barrel% against LHP and 11.9% against RHP.</li> </ul> <p>He should remain in an everyday run-producing role rather than a strict platoon. Boston can maximize the profile with premium lineup placement against left-handed starters while preserving regular exposure against right-handed pitching.</p> <figure class="pb-report-figure"> <img class="pb-report-chart" src="/assets/img/player-analysis/willson-contreras/05-platoon-profile.png" alt="Willson Contreras offensive production against left-handed and right-handed pitching"> <figcaption>The platoon split supports matchup-aware lineup optimization without reducing him to a part-time role.</figcaption> </figure> <h2 id="6-what-should-he-work-on">6. What Should He Work On?</h2> <p>Breaking-ball recognition is the clearest development priority. Sliders generated a 45.2% Whiff% and 47.7% Chase%, while sweepers generated a 33.8% Whiff%. Changeups also generated a 38.8% Whiff%, although the contact he made against them was damaging.</p> <p>Zone 1 was the clearest location-based weakness: .150 AVG, .300 SLG, and .209 xwOBA in at-bats ending there. Fastballs accounted for most of the pitches he saw in that zone. Zone 7 should not be treated as equally vulnerable because its .143 AVG was paired with a more competitive .352 xwOBA.</p> <p>The development plan should emphasize breaking-ball recognition, two-strike coverage, and contact precision against fastballs in Zone 1. The objective is better decisions and better contact location—not additional raw bat speed.</p> <figure class="pb-report-figure"> <img class="pb-report-chart" src="/assets/img/player-analysis/willson-contreras/06-pitch-type-vulnerability.png" alt="Willson Contreras chase and whiff rates by Statcast pitch type"> <figcaption>Sliders created the most pronounced combination of chase and swing-and-miss.</figcaption> </figure> <h2 id="baseball-operations-recommendation">Baseball Operations Recommendation</h2> <p>Keep Contreras in an everyday run-producing role and prioritize premium opportunities against left-handed pitching. Reinforce the pull-side plan that fits Fenway without assuming the park is responsible for the entire performance. Against right-handed pitching, prepare for heavier breaking-ball usage and targeted attacks with fastballs in Zone 1.</p> <p>The strongest indicators are actionable, but the components are not equally stable. Pull-side power, platoon value, and middle/lower-zone coverage are strengths. Second-half contact quality, breaking-ball swing-and-miss, and Zone 1 fastball performance are the clearest monitoring and development priorities.</p> <h2 id="methodology-and-limitations">Methodology and Limitations</h2> <p>This analysis uses 2,072 pitches and 534 completed plate appearances from Baseball Savant between March 26 and September 17, 2026. It is a season-to-date evaluation, not a final 2026 report. Home/away, platoon, and zone splits are descriptive rather than park- or opponent-adjusted. xwOBA was reconstructed from public Statcast fields and may differ slightly from Baseball Savant’s displayed value.</p> <p>Small-sample splits, one home run without tracking coordinates, and unavailable internal health or video context were retained as explicit limitations. Public data should be paired with video, scouting observations, medical context, and internal tracking data before making a baseball decision. Player headshot sourced from MLB’s official media service.</p> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Gabriel Sequera. <strong>Panalytics Baseball</strong> · <a href="https://www.linkedin.com/in/gabriel-sequera/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/PanalyticsBaseball" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:panalyticsbaseball@gmail.com">Email</a> · Built with GitHub Pages </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-projects",
+          title: "Projects",
+          description: "Baseball analytics and player-development projects built with practical baseball questions in mind.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "dropdown-overview",
+              title: "Overview",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/player-analysis/";
+              },
+            },{id: "dropdown-hitters",
+              title: "Hitters",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/player-analysis/hitters/";
+              },
+            },{id: "dropdown-pitchers",
+              title: "Pitchers",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/player-analysis/pitchers/";
+              },
+            },{id: "nav-articles",
+          title: "Articles",
+          description: "Baseball Research &amp; Insights by Gabriel Sequera.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/articles/";
+          },
+        },{id: "nav-r-code",
+          title: "R Code",
+          description: "R &amp; Baseball Analytics workflows explained for both technical and non-technical baseball audiences.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/r-code/";
+          },
+        },{id: "nav-resume-cv",
+          title: "Resume / CV",
+          description: "Gabriel Sequera&#39;s professional background in baseball, player development, and analytics.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "players-jordan-walker",
+          title: 'Jordan Walker',
+          description: "What caused Jordan Walker&#39;s second-half decline, and what should his next offensive adjustment target?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/jordan-walker/";
+            },},{id: "players-miguel-vargas",
+          title: 'Miguel Vargas',
+          description: "Why did Miguel Vargas improve in 2026, and how sustainable is the breakout?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/miguel-vargas/";
+            },},{id: "players-louis-varland",
+          title: 'Louis Varland',
+          description: "Analysis placeholder for Louis Varland.",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/louis-varland/";
+            },},{id: "players-max-meyer",
+          title: 'Max Meyer',
+          description: "Analysis placeholder for Max Meyer.",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/max-meyer/";
+            },},{id: "players-bubba-chandler",
+          title: 'Bubba Chandler',
+          description: "Analysis placeholder for Bubba Chandler.",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/bubba-chandler/";
+            },},{id: "players-willson-contreras",
+          title: 'Willson Contreras',
+          description: "How did Willson Contreras build an impact offensive season in Boston, and which parts of the profile are sustainable?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/willson-contreras/";
+            },},{id: "projects-athlete-lab",
+          title: 'Athlete Lab',
+          description: "Gabriel&#39;s first R Shiny application, created as a hands-on introduction to interactive baseball reporting.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/athlete-lab/";
+            },},{id: "projects-panalytics-prospects",
+          title: 'Panalytics Prospects',
+          description: "An interactive R Shiny application for exploring rookie pitcher performance across Major League Baseball and the Minor Leagues.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/panalytics-prospects/";
+            },},{id: "projects-miami-marlins-prospect-report",
+          title: 'Miami Marlins Prospect Report',
+          description: "An interactive R Shiny report for exploring player performance and prospect information in the Miami Marlins system.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/marlins-sports-intelligence/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%70%61%6E%61%6C%79%74%69%63%73%62%61%73%65%62%61%6C%6C@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/PanalyticsBaseball", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/gabriel-sequera", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
