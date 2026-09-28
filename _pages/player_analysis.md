@@ -27,7 +27,7 @@ children:
     {% assign hitters = site.players | where: "player_type", "hitter" | sort: "order" %}
     {% for player in hitters %}
       <article class="pb-card">
-        <img class="pb-card-image" src="{{ player.image | relative_url }}" alt="Placeholder image for {{ player.title }}">
+        <img class="pb-card-image" src="{{ player.image | relative_url }}" alt="{{ player.title }} headshot">
         <div class="pb-card-body">
           <h3>{{ player.title }}</h3>
           <p class="pb-meta">{{ player.team }} · {{ player.position }}</p>
@@ -48,7 +48,7 @@ children:
     {% assign pitchers = site.players | where: "player_type", "pitcher" | sort: "order" %}
     {% for player in pitchers %}
       <article class="pb-card">
-        <img class="pb-card-image" src="{{ player.image | relative_url }}" alt="Placeholder image for {{ player.title }}">
+        <img class="pb-card-image" src="{{ player.image | relative_url }}" alt="{{ player.title }} headshot">
         <div class="pb-card-body">
           <h3>{{ player.title }}</h3>
           <p class="pb-meta">{{ player.team }} · {{ player.position }}</p>
@@ -62,5 +62,3 @@ children:
     {% endfor %}
   </div>
 </section>
-
-<p class="pb-placeholder"><strong>Analysis status:</strong> The six requested players are listed. Positions for hitters, player images, verified metrics, sample context, charts, and Gabriel's original analysis remain explicit placeholders.</p>

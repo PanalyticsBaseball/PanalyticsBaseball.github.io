@@ -14,7 +14,7 @@ nav: false
   {% assign hitters = site.players | where: "player_type", "hitter" | sort: "order" %}
   {% for player in hitters %}
     <article class="pb-card">
-      <img class="pb-card-image" src="{{ player.image | relative_url }}" alt="Placeholder image for {{ player.title }}">
+      <img class="pb-card-image" src="{{ player.image | relative_url }}" alt="{{ player.title }} headshot">
       <div class="pb-card-body">
         <h3>{{ player.title }}</h3>
         <p class="pb-meta">{{ player.team }} · {{ player.position }}</p>
