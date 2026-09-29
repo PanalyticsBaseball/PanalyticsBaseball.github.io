@@ -50,13 +50,16 @@ The adjustment appeared across the entire arsenal. From the high-slot period to 
 
 The lower slot improved control but did not make Chandler more difficult to hit. The high-slot system generated the strongest combination of K%, Whiff%, and Chase%. The low-slot system produced the best BB%, Zone%, and CSW%, but its called-strike rate increased while Whiff% declined.
 
-| Mechanical system | Games | PA | Arm angle | K% | BB% | Zone% | CSW% | Whiff% | Chase% | Hard-Hit% | xwOBA |
-|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
-| High slot | 14 | 301 | 46.8° | 22.6% | 13.3% | 46.9% | 25.2% | 22.3% | 30.5% | 36.0% | .319 |
-| Transition | 6 | 141 | 40.8° | 15.6% | 10.6% | 48.9% | 23.4% | 18.6% | 26.7% | 39.6% | .286 |
-| Low slot | 9 | 194 | 38.7° | 21.1% | 9.8% | 50.6% | 26.5% | 17.4% | 25.7% | 41.7% | .333 |
-| Late rebound | 2 | 38 | 42.0° | 21.1% | 13.2% | 49.1% | 26.3% | 23.6% | 24.7% | 50.0% | .347 |
-{: .pb-comparison-table }
+<div class="pb-comparison-table" markdown="1">
+
+| Mechanical system | Games |  PA | Arm angle |    K% |   BB% | Zone% |  CSW% | Whiff% | Chase% | Hard-Hit% | xwOBA |
+| :---------------- | ----: | --: | --------: | ----: | ----: | ----: | ----: | -----: | -----: | --------: | ----: |
+| High slot         |    14 | 301 |     46.8° | 22.6% | 13.3% | 46.9% | 25.2% |  22.3% |  30.5% |     36.0% |  .319 |
+| Transition        |     6 | 141 |     40.8° | 15.6% | 10.6% | 48.9% | 23.4% |  18.6% |  26.7% |     39.6% |  .286 |
+| Low slot          |     9 | 194 |     38.7° | 21.1% |  9.8% | 50.6% | 26.5% |  17.4% |  25.7% |     41.7% |  .333 |
+| Late rebound      |     2 |  38 |     42.0° | 21.1% | 13.2% | 49.1% | 26.3% |  23.6% |  24.7% |     50.0% |  .347 |
+
+</div>
 
 ### Four-system conclusions
 

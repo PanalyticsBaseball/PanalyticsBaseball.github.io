@@ -273,13 +273,18 @@
 }
 
 .pb-comparison-table {
-  border-collapse: collapse;
   display: block;
-  font-size: 0.82rem;
   margin: 1.25rem 0 1.75rem;
   max-width: 100%;
   overflow-x: auto;
+}
+
+.pb-comparison-table table {
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin: 0;
   white-space: nowrap;
+  width: 100%;
 }
 
 .pb-comparison-table th,
