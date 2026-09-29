@@ -1,0 +1,4 @@
+dataset,source_rows,player_rows,duplicate_player_ids
+Batting,24,23,0
+Pitching,26,25,0
+Pitching value,26,25,0
