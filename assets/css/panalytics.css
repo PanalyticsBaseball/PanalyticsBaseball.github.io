@@ -96,10 +96,6 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.pb-grid-two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .pb-card {
   background: var(--pb-white);
   border: 1px solid var(--pb-border);
@@ -117,6 +113,12 @@
   display: block;
   object-fit: cover;
   width: 100%;
+}
+
+.pb-project-image {
+  height: 11.5rem;
+  object-fit: contain;
+  padding: 0.65rem;
 }
 
 .pb-card-body {
@@ -230,15 +232,13 @@
 }
 
 @media (max-width: 800px) {
-  .pb-grid,
-  .pb-grid-two {
+  .pb-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 560px) {
-  .pb-grid,
-  .pb-grid-two {
+  .pb-grid {
     grid-template-columns: 1fr;
   }
 
