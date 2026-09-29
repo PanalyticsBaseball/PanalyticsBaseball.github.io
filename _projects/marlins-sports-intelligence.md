@@ -10,7 +10,9 @@ permalink: /projects/marlins-sports-intelligence/
 
 <link rel="stylesheet" href="{{ '/assets/css/panalytics.css' | relative_url }}">
 
-![Miami Marlins Sports Intelligence dashboard]({{ '/assets/img/marlins-sports-intelligence.png' | relative_url }})
+<figure class="pb-project-preview">
+  <img src="{{ '/assets/img/marlins-sports-intelligence.png' | relative_url }}" alt="Miami Marlins Sports Intelligence dashboard">
+</figure>
 
 ## Project overview
 

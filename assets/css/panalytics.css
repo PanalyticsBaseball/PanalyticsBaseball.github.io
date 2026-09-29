@@ -125,6 +125,26 @@
   padding: 0.65rem;
 }
 
+.pb-project-preview {
+  margin: 0 auto 1.75rem;
+  max-width: 46rem;
+  text-align: center;
+}
+
+.pb-project-preview img {
+  background: var(--pb-surface);
+  border: 1px solid var(--pb-border);
+  border-radius: 0.65rem;
+  box-shadow: 0 8px 24px rgb(16 42 67 / 7%);
+  display: block;
+  margin: 0 auto;
+  max-height: 25rem;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 0.65rem;
+  width: auto;
+}
+
 .pb-card-body {
   display: flex;
   flex: 1;

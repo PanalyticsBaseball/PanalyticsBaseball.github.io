@@ -10,7 +10,9 @@ permalink: /projects/panalytics-prospects/
 
 <link rel="stylesheet" href="{{ '/assets/css/panalytics.css' | relative_url }}">
 
-![Panalytics Prospects pitcher performance dashboard]({{ '/assets/img/panalytics-prospects.png' | relative_url }})
+<figure class="pb-project-preview">
+  <img src="{{ '/assets/img/panalytics-prospects.png' | relative_url }}" alt="Panalytics Prospects pitcher performance dashboard">
+</figure>
 
 ## Project overview
 

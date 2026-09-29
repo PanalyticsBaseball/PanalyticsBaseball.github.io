@@ -45,7 +45,16 @@ latest_posts:
 
   <div class="pb-grid">
     <article class="pb-card">
-      <img class="pb-card-image" src="{{ '/assets/img/panalytics-prospects.png' | relative_url }}" alt="Panalytics Prospects R Shiny pitcher performance dashboard">
+      <img class="pb-card-image pb-project-image" src="{{ '/assets/img/marlins-sports-intelligence.png' | relative_url }}" alt="Miami Marlins Sports Intelligence R Shiny application">
+      <div class="pb-card-body">
+        <h3>Miami Marlins Prospect Report</h3>
+        <p>An interactive report designed to make prospect information easier to explore and communicate.</p>
+        <a class="pb-button" href="{{ '/projects/marlins-sports-intelligence/' | relative_url }}">View Project</a>
+      </div>
+    </article>
+
+    <article class="pb-card">
+      <img class="pb-card-image pb-project-image" src="{{ '/assets/img/panalytics-prospects.png' | relative_url }}" alt="Panalytics Prospects R Shiny pitcher performance dashboard">
       <div class="pb-card-body">
         <h3>Panalytics Prospects</h3>
         <p>An interactive R Shiny application for exploring rookie pitcher performance across MLB and the Minor Leagues.</p>
@@ -54,20 +63,11 @@ latest_posts:
     </article>
 
     <article class="pb-card">
-      <img class="pb-card-image" src="{{ '/assets/img/athlete-lab.png' | relative_url }}" alt="Athlete Lab R Shiny application showing a pitcher arsenal and location report">
+      <img class="pb-card-image pb-project-image" src="{{ '/assets/img/athlete-lab.png' | relative_url }}" alt="Athlete Lab R Shiny application showing a pitcher arsenal and location report">
       <div class="pb-card-body">
         <h3>Athlete Lab</h3>
         <p>Gabriel's first R Shiny application and the foundation for his work in interactive baseball reporting.</p>
         <a class="pb-button" href="{{ '/projects/athlete-lab/' | relative_url }}">View Project</a>
-      </div>
-    </article>
-
-    <article class="pb-card">
-      <img class="pb-card-image" src="{{ '/assets/img/marlins-sports-intelligence.png' | relative_url }}" alt="Miami Marlins Sports Intelligence R Shiny application">
-      <div class="pb-card-body">
-        <h3>Miami Marlins Prospect Report</h3>
-        <p>An interactive report designed to make prospect information easier to explore and communicate.</p>
-        <a class="pb-button" href="{{ '/projects/marlins-sports-intelligence/' | relative_url }}">View Project</a>
       </div>
     </article>
 
