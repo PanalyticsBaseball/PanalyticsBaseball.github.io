@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Louis Varland Two-Strike Effectiveness</title>
+    <script src="https://cdn.jsdelivr.net/npm/plotly.js@3.0.1/dist/plotly.min.js"></script>
+    <style>
+      html,
+      body,
+      #chart {
+        height: 100%;
+        margin: 0;
+        width: 100%;
+      }
+
+      body {
+        background: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart" role="img" aria-label="Interactive chart of Louis Varland two-strike chase and whiff rates by pitch type"></div>
+    <script>
+      const pitches = ["Four-seam", "Knuckle curve", "Changeup", "Slider"];
+      const chase = [0.5, 0.386, 0.625, 0.333];
+      const whiff = [0.2, 0.289, 0.36, 0.2];
+      const usage = [0.435, 0.353, 0.169, 0.038];
+      const putAway = [0.254, 0.18, 0.292, 0.125];
+      const xwoba = [0.187, 0.165, 0.132, 0.304];
+      const runValue = [6.38, 1.33, 2.25, -0.66];
+
+      const customData = usage.map((value, index) => [value, putAway[index], xwoba[index], runValue[index]]);
+
+      const trace = {
+        type: "scatter",
+        mode: "markers+text",
+        x: chase,
+        y: whiff,
+        text: pitches,
+        textposition: ["top center", "top center", "top center", "top center"],
+        textfont: { color: "#17324d", size: 14 },
+        customdata: customData,
+        hovertemplate:
+          "<b>%{text}</b><br>" +
+          "Chase: %{x:.1%}<br>" +
+          "Whiff: %{y:.1%}<br>" +
+          "Two-strike usage: %{customdata[0]:.1%}<br>" +
+          "PutAway: %{customdata[1]:.1%}<br>" +
+          "xwOBA: %{customdata[2]:.3f}<br>" +
+          "Pitching run value: %{customdata[3]:+.1f}<extra></extra>",
+        marker: {
+          size: 22,
+          symbol: ["circle", "square", "diamond", "triangle-up"],
+          color: xwoba,
+          cmin: 0.13,
+          cmax: 0.31,
+          colorscale: [
+            [0, "#bd3039"],
+            [0.5, "#f4f1ea"],
+            [1, "#7896c8"],
+          ],
+          line: { color: "#17324d", width: 1.5 },
+          colorbar: {
+            title: { text: "xwOBA" },
+            tickformat: ".3f",
+            thickness: 14,
+            len: 0.55,
+          },
+        },
+      };
+
+      const layout = {
+        title: {
+          text: "The changeup created Varland's best two-strike combination",
+          x: 0.03,
+          xanchor: "left",
+          font: { color: "#17324d", size: 22 },
+        },
+        paper_bgcolor: "#ffffff",
+        plot_bgcolor: "#ffffff",
+        font: { color: "#27343d", size: 13 },
+        margin: { l: 75, r: 80, t: 80, b: 70 },
+        hoverlabel: { bgcolor: "#17324d", bordercolor: "#17324d", font: { color: "#ffffff", size: 13 } },
+        xaxis: {
+          title: "Chase%",
+          tickformat: ".0%",
+          range: [0.25, 0.7],
+          gridcolor: "#e4e8eb",
+          zeroline: false,
+        },
+        yaxis: {
+          title: "Whiff%",
+          tickformat: ".0%",
+          range: [0.1, 0.42],
+          gridcolor: "#e4e8eb",
+          zeroline: false,
+        },
+        shapes: [
+          { type: "line", x0: 0.461, x1: 0.461, y0: 0.1, y1: 0.42, line: { color: "#cfd7de", dash: "dash" } },
+          { type: "line", x0: 0.25, x1: 0.7, y0: 0.262, y1: 0.262, line: { color: "#cfd7de", dash: "dash" } },
+        ],
+        annotations: [
+          {
+            text: "Hover over a pitch for usage, PutAway%, xwOBA, and run value",
+            x: 0,
+            y: -0.2,
+            xref: "paper",
+            yref: "paper",
+            showarrow: false,
+            xanchor: "left",
+            font: { color: "#6d7880", size: 12 },
+          },
+        ],
+      };
+
+      Plotly.newPlot("chart", [trace], layout, {
+        responsive: true,
+        displaylogo: false,
+        modeBarButtonsToRemove: ["lasso2d", "select2d"],
+      });
+    </script>
+  </body>
+</html>
