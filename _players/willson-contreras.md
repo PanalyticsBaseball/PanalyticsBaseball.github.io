@@ -4,7 +4,7 @@ player_type: hitter
 order: 2
 team: Boston Red Sox
 position: First Base
-image: /assets/img/player-analysis/willson-contreras/willson-contreras-profile.jpeg
+image: /assets/img/player-analysis/willson-contreras/willson-contreras-profile-2026.jpg
 metrics:
   - ".905 OPS"
   - ".377 xwOBA"

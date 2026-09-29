@@ -4,7 +4,7 @@ player_type: hitter
 order: 1
 team: Chicago White Sox
 position: Third Base / First Base
-image: /assets/img/player-analysis/miguel-vargas/miguel-vargas-headshot.jpg
+image: /assets/img/player-analysis/miguel-vargas/miguel-vargas-profile-2026.jpg
 metrics:
   - ".832 OPS"
   - ".381 xwOBA"
