@@ -3,7 +3,7 @@ layout: page
 title: Miami Marlins Prospect Report
 description: An interactive R Shiny report for exploring player performance and prospect information in the Miami Marlins system.
 img: /assets/img/marlins-sports-intelligence.png
-importance: 3
+importance: 1
 category: analytics
 permalink: /projects/marlins-sports-intelligence/
 ---

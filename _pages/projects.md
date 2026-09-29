@@ -16,11 +16,11 @@ horizontal: false
 
 <div class="projects pb-section">
   {% assign sorted_projects = site.projects | sort: "importance" %}
-  <div class="pb-grid pb-grid-two">
+  <div class="pb-grid">
     {% for project in sorted_projects %}
       <article class="pb-card">
         {% if project.img %}
-          <img class="pb-card-image" src="{{ project.img | relative_url }}" alt="{{ project.title }} preview">
+          <img class="pb-card-image pb-project-image" src="{{ project.img | relative_url }}" alt="{{ project.title }} preview">
         {% endif %}
         <div class="pb-card-body">
           <h3>{{ project.title }}</h3>

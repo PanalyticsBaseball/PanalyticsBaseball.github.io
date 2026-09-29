@@ -3,7 +3,7 @@ layout: page
 title: Panalytics Prospects
 description: An interactive R Shiny application for exploring rookie pitcher performance across Major League Baseball and the Minor Leagues.
 img: /assets/img/panalytics-prospects.png
-importance: 1
+importance: 2
 category: analytics
 permalink: /projects/panalytics-prospects/
 ---

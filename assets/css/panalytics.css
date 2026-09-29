@@ -119,6 +119,12 @@
   width: 100%;
 }
 
+.pb-project-image {
+  height: 11.5rem;
+  object-fit: contain;
+  padding: 0.65rem;
+}
+
 .pb-card-body {
   display: flex;
   flex: 1;
