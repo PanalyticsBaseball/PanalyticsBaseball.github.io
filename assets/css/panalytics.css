@@ -196,6 +196,20 @@
   max-width: 42rem;
 }
 
+.pb-report-figure-interactive {
+  max-width: 56rem;
+}
+
+.pb-interactive-chart {
+  background: var(--pb-white);
+  border: 1px solid var(--pb-border);
+  border-radius: 0.55rem;
+  box-shadow: 0 8px 24px rgb(16 42 67 / 7%);
+  display: block;
+  height: 38rem;
+  width: 100%;
+}
+
 .pb-report-chart {
   background: var(--pb-white);
   border: 1px solid var(--pb-border);
@@ -235,6 +249,10 @@
 
   .pb-button {
     width: 100%;
+  }
+
+  .pb-interactive-chart {
+    height: 32rem;
   }
 }
 
