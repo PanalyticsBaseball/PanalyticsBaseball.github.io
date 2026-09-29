@@ -43,33 +43,19 @@ latest_posts:
   <h2 id="featured-work" class="pb-section-heading">Featured Work</h2>
   <p class="pb-section-intro">A quick view of the technical projects and player-evaluation work most relevant to baseball recruiters.</p>
 
+{% assign sorted_projects = site.projects | sort: "importance" %}
   <div class="pb-grid">
-    <article class="pb-card">
-      <img class="pb-card-image pb-project-image" src="{{ '/assets/img/marlins-sports-intelligence.png' | relative_url }}" alt="Miami Marlins Sports Intelligence R Shiny application">
-      <div class="pb-card-body">
-        <h3>Miami Marlins Prospect Report</h3>
-        <p>An interactive report designed to make prospect information easier to explore and communicate.</p>
-        <a class="pb-button" href="{{ '/projects/marlins-sports-intelligence/' | relative_url }}">View Project</a>
-      </div>
-    </article>
-
-    <article class="pb-card">
-      <img class="pb-card-image pb-project-image" src="{{ '/assets/img/panalytics-prospects.png' | relative_url }}" alt="Panalytics Prospects R Shiny pitcher performance dashboard">
-      <div class="pb-card-body">
-        <h3>Panalytics Prospects</h3>
-        <p>An interactive R Shiny application for exploring rookie pitcher performance across MLB and the Minor Leagues.</p>
-        <a class="pb-button" href="{{ '/projects/panalytics-prospects/' | relative_url }}">View Project</a>
-      </div>
-    </article>
-
-    <article class="pb-card">
-      <img class="pb-card-image pb-project-image" src="{{ '/assets/img/athlete-lab.png' | relative_url }}" alt="Athlete Lab R Shiny application showing a pitcher arsenal and location report">
-      <div class="pb-card-body">
-        <h3>Athlete Lab</h3>
-        <p>Gabriel's first R Shiny application and the foundation for his work in interactive baseball reporting.</p>
-        <a class="pb-button" href="{{ '/projects/athlete-lab/' | relative_url }}">View Project</a>
-      </div>
-    </article>
-
+    {% for project in sorted_projects %}
+      <article class="pb-card">
+        {% if project.img %}
+          <img class="pb-card-image pb-project-image" src="{{ project.img | relative_url }}" alt="{{ project.title }} preview">
+        {% endif %}
+        <div class="pb-card-body">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <a class="pb-button" href="{{ project.url | relative_url }}">View Project</a>
+        </div>
+      </article>
+    {% endfor %}
   </div>
 </section>
