@@ -88,7 +88,7 @@ The changeup was Varland's most efficient two-strike pitch in 2026, despite bein
 The recommendation is not to replace the four-seam as his primary finisher. It is to create more two-strike changeup opportunities, especially against left-handed hitters, while preserving the elevated four-seam path.
 
 <figure class="pb-report-figure pb-report-figure-interactive">
-  <iframe class="pb-interactive-chart" src="{{ '/assets/plotly/louis-varland-two-strike.html' | relative_url }}" title="Interactive Louis Varland two-strike pitch effectiveness chart" loading="lazy"></iframe>
+  <iframe class="pb-interactive-chart" src="{{ '/interactive/louis-varland-two-strike.html' | relative_url }}" title="Interactive Louis Varland two-strike pitch effectiveness chart" loading="lazy"></iframe>
   <noscript>
     <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/louis-varland/04-two-strike-strategy.png' | relative_url }}" alt="Louis Varland 2026 two-strike chase and whiff rates using fixed symbols and color for expected production">
   </noscript>
