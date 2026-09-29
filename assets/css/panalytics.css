@@ -125,6 +125,10 @@
   padding: 0.65rem;
 }
 
+.pb-project-image-compact {
+  padding: 1.45rem;
+}
+
 .pb-project-preview {
   margin: 0 auto 1.75rem;
   max-width: 46rem;

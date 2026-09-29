@@ -3,6 +3,7 @@ layout: page
 title: Athlete Lab
 description: Gabriel's first R Shiny application, created as a hands-on introduction to interactive baseball reporting.
 img: /assets/img/athlete-lab.png
+image_class: pb-project-image-compact
 importance: 3
 category: analytics
 permalink: /projects/athlete-lab/
