@@ -9,7 +9,7 @@ Panalytics Baseball is a portfolio of reproducible baseball research workflows d
 - **Bubba Chandler:** pitching mechanics, arm-slot phases, breaking-ball movement, and sequencing. See the [report](https://panalyticsbaseball.github.io/player-analysis/bubba-chandler/) and [R script](scripts/bubba-chandler-arm-slot.R).
 - **Miguel Vargas:** year-over-year process indicators including xwOBA, BB%, Whiff%, Barrel%, and hard-hit rate. See the [report](https://panalyticsbaseball.github.io/player-analysis/miguel-vargas/) and [R script](scripts/miguel-vargas-development.R).
 - **Willson Contreras:** Statcast data cleaning, terminal plate-appearance logic, valid strike-zone samples, xwOBA, and SLG by location. See the [report](https://panalyticsbaseball.github.io/player-analysis/willson-contreras/) and [R script](scripts/willson-contreras-zone-cleaning.R).
-- **Marlins Decision Lab:** a Shiny app with reactive filters, team-relative percentiles, player comparisons, sortable roster tables, Plotly tooltips, and downloadable profiles. See the [app source](shiny/marlins-decision-lab/app.R) and [data-preparation script](shiny/marlins-decision-lab/prepare-data.R).
+- **Marlins Decision Lab:** a Shiny app with reactive filters, team-relative percentiles, player comparisons, sortable roster tables, Plotly tooltips, and downloadable profiles. See the [app source](shiny/marlins-decision-lab/app.R), [data-preparation script](shiny/marlins-decision-lab/prepare-data.R), and [shinyapps.io deployment guide](docs/SHINYAPPS_DEPLOYMENT.md).
 
 ## Skills demonstrated
 
