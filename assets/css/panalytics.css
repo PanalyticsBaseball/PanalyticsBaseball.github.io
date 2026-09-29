@@ -145,19 +145,6 @@
   width: auto;
 }
 
-.pb-player-photo {
-  margin: 0 auto 1.75rem;
-  max-width: 44rem;
-}
-
-.pb-player-photo img {
-  border: 1px solid var(--pb-border);
-  border-radius: 0.65rem;
-  box-shadow: 0 8px 24px rgb(16 42 67 / 7%);
-  display: block;
-  width: 100%;
-}
-
 .pb-card-body {
   display: flex;
   flex: 1;
@@ -266,6 +253,32 @@
   margin: 0.65rem auto 0;
   max-width: 46rem;
   text-align: center;
+}
+
+.pb-comparison-table {
+  border-collapse: collapse;
+  display: block;
+  font-size: 0.82rem;
+  margin: 1.25rem 0 1.75rem;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.pb-comparison-table th,
+.pb-comparison-table td {
+  border-bottom: 1px solid var(--pb-border);
+  padding: 0.55rem 0.7rem;
+}
+
+.pb-comparison-table th {
+  background: var(--pb-navy);
+  color: var(--pb-white);
+  font-weight: 700;
+}
+
+.pb-comparison-table tbody tr:nth-child(even) {
+  background: var(--pb-surface);
 }
 
 @media (max-width: 800px) {
