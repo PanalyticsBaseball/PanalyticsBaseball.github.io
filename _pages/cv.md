@@ -6,7 +6,7 @@ nav: true
 nav_order: 6
 cv_pdf: /assets/rendercv/rendercv_output/Gabriel_Sequera_CV.pdf
 cv_format: rendercv
-description: Gabriel Sequera's professional background in baseball, player development, and analytics.
+description: Gabriel Sequera's verified experience, baseball analytics projects, technical skills, and professional background.
 toc:
   sidebar: left
 ---
