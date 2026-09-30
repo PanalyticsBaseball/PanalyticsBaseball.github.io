@@ -87,7 +87,7 @@ cv:
       - bullet: Former collegiate catcher at Bergen Community College (2019–2020).
       - bullet: Strength and conditioning coach at GBA Baseball Academy in Caracas, Venezuela (2014–2016).
 
-    Skills:
+    Technical Skills:
       - label: Analytics & Programming
         details: R, Python, SQL, dplyr, tidyr, ggplot2, Shiny, Plotly, DT
       - label: Baseball Data
