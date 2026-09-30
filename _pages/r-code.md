@@ -27,9 +27,9 @@ nav_order: 5
   <p>Instead of imposing a generic first-half and second-half split, the workflow assigns each pitch to one of four periods that follow Chandler's actual arm-slot progression.</p>
 
   <div class="pb-code-result-grid">
-    <div class="pb-code-panel" markdown="1">
+    <div class="pb-code-panel">
 
-```r
+{% highlight r %}
 pitches <- read.csv(input_file) |>
   mutate(
     game_date = as.Date(game_date),
@@ -43,7 +43,7 @@ pitches <- read.csv(input_file) |>
     whiff = description %in% whiff_descriptions,
     in_zone = zone >= 1 & zone <= 9
   )
-```
+{% endhighlight %}
 
     </div>
     <figure class="pb-code-result">
@@ -60,9 +60,9 @@ pitches <- read.csv(input_file) |>
   <p>The summary keeps denominators explicit. Whiff% uses swings, Chase% uses pitches outside the zone, and plate-appearance outcomes are calculated separately from pitch-level behavior.</p>
 
   <div class="pb-code-result-grid">
-    <div class="pb-code-panel" markdown="1">
+    <div class="pb-code-panel">
 
-```r
+{% highlight r %}
 phase_summary <- pitches |>
   group_by(phase) |>
   summarise(
@@ -77,7 +77,7 @@ phase_summary <- pitches |>
     xwOBA = mean(estimated_woba_using_speedangle,
                  na.rm = TRUE)
   )
-```
+{% endhighlight %}
 
     </div>
     <figure class="pb-code-result">
@@ -94,9 +94,9 @@ phase_summary <- pitches |>
   <p>Pitch type is encoded with geometric shape, mechanical period with color, and usage with point size. The chart remains interpretable even when color differences are difficult to distinguish.</p>
 
   <div class="pb-code-result-grid">
-    <div class="pb-code-panel" markdown="1">
+    <div class="pb-code-panel">
 
-```r
+{% highlight r %}
 pitch_shapes <- c(
   FF = 21, SL = 22, CH = 24,
   CU = 23, SI = 25, ST = 8
@@ -112,7 +112,7 @@ ggplot(breaking_summary,
   geom_point(alpha = 0.9, stroke = 1) +
   scale_shape_manual(values = pitch_shapes) +
   coord_equal()
-```
+{% endhighlight %}
 
     </div>
     <figure class="pb-code-result">
@@ -129,9 +129,9 @@ ggplot(breaking_summary,
   <p>Each pitch is linked to the preceding pitch within the same plate appearance. The analysis then compares frequency, Whiff%, and xwOBA for the second pitch in each pairing.</p>
 
   <div class="pb-code-result-grid">
-    <div class="pb-code-panel" markdown="1">
+    <div class="pb-code-panel">
 
-```r
+{% highlight r %}
 sequenced_pitches <- pitches |>
   arrange(game_pk, at_bat_number, pitch_number) |>
   group_by(game_pk, at_bat_number) |>
@@ -147,7 +147,7 @@ sequence_summary <- sequenced_pitches |>
     xwOBA = mean(estimated_woba_using_speedangle,
                  na.rm = TRUE)
   )
-```
+{% endhighlight %}
 
     </div>
     <figure class="pb-code-result">
@@ -164,9 +164,9 @@ sequence_summary <- sequenced_pitches |>
   <p>The Vargas workflow compares expected production, swing decisions, and contact quality across seasons. The key question is whether added damage came with a larger swing-and-miss cost.</p>
 
   <div class="pb-code-result-grid">
-    <div class="pb-code-panel" markdown="1">
+    <div class="pb-code-panel">
 
-```r
+{% highlight r %}
 season_summary <- pitches |>
   group_by(season) |>
   summarise(
@@ -183,7 +183,7 @@ season_summary <- pitches |>
       launch_speed[batted_ball] >= 95
     )
   )
-```
+{% endhighlight %}
 
     </div>
     <figure class="pb-code-result">
@@ -206,9 +206,9 @@ season_summary <- pitches |>
   <p>A Statcast download contains one row per pitch, but a hitter's outcome belongs only to the terminal pitch of a plate appearance. This workflow removes non-terminal rows, defines official at-bats, validates zones 1–9, resolves missing expected values, and audits every reduction before plotting.</p>
 
   <div class="pb-code-result-grid">
-    <div class="pb-code-panel" markdown="1">
+    <div class="pb-code-panel">
 
-```r
+{% highlight r %}
 clean_pitches <- raw_pitches |>
   mutate(
     terminal_pa = !is.na(events) & events != "",
@@ -233,7 +233,7 @@ zone_summary <- analysis_sample |>
     xwOBA = mean(expected_woba),
     SLG = sum(total_bases) / AB
   )
-```
+{% endhighlight %}
 
     </div>
     <figure class="pb-code-result">
@@ -257,9 +257,9 @@ zone_summary <- analysis_sample |>
   <p>The Marlins Decision Lab converts cleaned Baseball-Reference tables into a responsive player-profile, comparison, and roster-ranking application. Reactive filters control the eligible sample, every player selection updates the metrics and Plotly graphic, and users can export the selected profile.</p>
 
   <div class="pb-code-result-grid">
-    <div class="pb-code-panel" markdown="1">
+    <div class="pb-code-panel">
 
-```r
+{% highlight r %}
 active_pool <- reactive({
   if (input$player_type == "Hitters") {
     hitter_pool |>
@@ -294,7 +294,7 @@ output$percentile_profile <- renderPlotly({
   ggplotly(chart, tooltip = "text") |>
     config(displayModeBar = FALSE)
 })
-```
+{% endhighlight %}
 
     </div>
     <figure class="pb-code-result">
