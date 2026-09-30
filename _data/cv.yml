@@ -3,6 +3,7 @@ cv:
   headline: Baseball Research & Development | Scouting | Baseball Operations
   location: Clifton, New Jersey
   email: gabriel.sequera@gmail.com
+  summary: Bilingual baseball operations and analytics professional with experience in affiliated and independent professional baseball environments. Uses R, Python, SQL, Statcast data, and sports-technology training to clean data, evaluate player performance, build interactive tools, and translate findings into player-development recommendations. Brings additional playing and coaching perspective as a former collegiate catcher.
 
   social_networks:
     - network: LinkedIn
@@ -11,10 +12,7 @@ cv:
       username: PanalyticsBaseball
 
   sections:
-    Professional Summary:
-      - Bilingual baseball operations and analytics professional with experience in affiliated and independent professional baseball environments. Uses R, Python, SQL, Statcast data, and sports-technology training to clean data, evaluate player performance, build interactive tools, and translate findings into player-development recommendations. Brings additional playing and coaching perspective as a former collegiate catcher.
-
-    Professional Experience:
+    Experience:
       - company: Panalytics Baseball
         position: Founder and Independent Baseball Analytics Researcher
         location: Remote
@@ -73,7 +71,7 @@ cv:
         start_date: 2018-09
         end_date: 2020-05
 
-    Certifications:
+    Certificates:
       - name: Sports Coding & Data Integration
         date: 2024
         issuer: Athletic Lab
@@ -84,19 +82,11 @@ cv:
         date: 2021
         issuer: Sports Management Worldwide
 
-    Baseball Experience:
-      - company: Bergen Community College
-        position: JUCO Baseball Catcher
-        location: Paramus, New Jersey
-        start_date: 2019
-        end_date: 2020
-      - company: GBA Baseball Academy
-        position: Strength and Conditioning Coach
-        location: Caracas, Venezuela
-        start_date: 2014
-        end_date: 2016
+    Baseball Background:
+      - bullet: Former collegiate catcher at Bergen Community College (2019–2020).
+      - bullet: Strength and conditioning coach at GBA Baseball Academy in Caracas, Venezuela (2014–2016).
 
-    Technical Skills:
+    Skills:
       - label: Analytics & Programming
         details: R, Python, SQL, dplyr, tidyr, ggplot2, Shiny, Plotly, DT
       - label: Baseball Data
@@ -108,8 +98,9 @@ cv:
       - label: Languages
         details: English (fluent), Spanish (native)
 
-    Relevant Projects:
+    Projects:
       - name: Marlins Decision Lab
+        date: 2026
         summary: Interactive R Shiny application for team-relative player evaluation, comparison, visualization, and report-ready data exports.
         highlights:
           - "R"
@@ -117,6 +108,7 @@ cv:
           - "Plotly"
           - "DT"
       - name: Bubba Chandler Pitching Research
+        date: 2026
         summary: Pitcher-development case study connecting arm-slot changes and mechanical systems with breaking-ball shape, swing decisions, weak contact, and strikeout outcomes.
         highlights:
           - "R"
@@ -124,6 +116,7 @@ cv:
           - "Pitch Design"
           - "Data Visualization"
       - name: Miguel Vargas Hitting Research
+        date: 2026
         summary: Hitter-development case study evaluating approach, bat speed, contact quality, performance change, and the sustainability of offensive improvement.
         highlights:
           - "R"
