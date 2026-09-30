@@ -3,8 +3,6 @@ cv:
   headline: Baseball Research & Development | Scouting | Baseball Operations
   location: Clifton, New Jersey
   email: gabriel.sequera@gmail.com
-  summary: Bilingual baseball operations and analytics professional with experience in affiliated and independent professional baseball environments. Uses R, Python, SQL, Statcast data, and sports-technology training to clean data, evaluate player performance, build interactive tools, and translate findings into player-development recommendations. Brings additional playing and coaching perspective as a former collegiate catcher.
-
   social_networks:
     - network: LinkedIn
       username: gabriel-sequera
@@ -12,6 +10,9 @@ cv:
       username: PanalyticsBaseball
 
   sections:
+    Professional Summary:
+      - bullet: Bilingual baseball operations and analytics professional with experience in affiliated and independent professional baseball environments. Uses R, Python, SQL, Statcast data, and sports-technology training to clean data, evaluate player performance, build interactive tools, and translate findings into player-development recommendations. Brings additional playing and coaching perspective as a former collegiate catcher.
+
     Experience:
       - company: Panalytics Baseball
         position: Founder and Independent Baseball Analytics Researcher
