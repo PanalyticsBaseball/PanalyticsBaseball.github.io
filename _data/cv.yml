@@ -1,6 +1,6 @@
 cv:
   name: Gabriel Sequera
-  headline: Baseball Operations | Player Development | Baseball Analytics
+  headline: Baseball Research & Development | Scouting | Baseball Operations
   location: Clifton, New Jersey
   email: gabriel.sequera@gmail.com
 
@@ -12,40 +12,52 @@ cv:
 
   sections:
     Professional Summary:
-      - Baseball operations and athletics professional with experience supporting facility readiness, game-day operations, performance-data workflows, and player-development reporting. Combines practical baseball experience with R, Python, SQL, and sports technology.
+      - Bilingual baseball operations and analytics professional with experience in affiliated and independent professional baseball environments. Uses R, Python, SQL, Statcast data, and sports-technology training to clean data, evaluate player performance, build interactive tools, and translate findings into player-development recommendations. Brings additional playing and coaching perspective as a former collegiate catcher.
 
     Professional Experience:
+      - company: Panalytics Baseball
+        position: Founder and Independent Baseball Analytics Researcher
+        location: Remote
+        start_date: 2024-07
+        end_date: present
+        summary: Founded an independent baseball analytics portfolio and began publishing player research projects in 2026 using public Statcast and Baseball-Reference data.
+        highlights:
+          - Built reproducible R workflows and decision-focused visualizations covering pitcher mechanics, pitch movement and sequencing, hitter approach, contact quality, and performance sustainability.
+          - Developed the Marlins Decision Lab in Shiny with reactive filters, team-relative percentiles, player comparisons, sortable tables, Plotly tooltips, and downloadable outputs.
+          - Published player-development case studies that connect statistical evidence with clear scouting observations, limitations, and recommendations.
+
       - company: New York Yankees, Somerset Patriots (Double-A Affiliate)
-        position: Baseball Operations Manager
+        position: Supervisor, Concessions and Guest Experience
         location: Bridgewater, New Jersey
         start_date: 2023-04
         end_date: 2025-09
-        summary: Managed ballpark logistics, facility readiness, game-day personnel, vendors, and operational support in a Double-A environment.
+        summary: Supported concessions and guest-experience operations for all scheduled Somerset Patriots home games.
         highlights:
-          - Supported alignment with MLB Player Development League standards and safety requirements.
-          - Produced visual and video assets for operational briefings and marketing initiatives.
-          - Served as a liaison for the Vice President of Operations and helped manage game-day personnel and vendors.
+          - Supervised a game-day team of approximately 16 employees and ensured the assigned stand was stocked, prepared, and operational before gates opened.
+          - Monitored inventory, customer service, and basic food-safety practices while resolving issues during games.
+          - Coordinated with colleagues during fan-entertainment activities and 50/50 raffles.
 
       - company: Saint Peter's University Facilities, Operations, & Recreational Life
-        position: Assistant Director
+        position: Assistant Director, Facilities, Operations & Recreational Life
         location: Jersey City, New Jersey
         start_date: 2022-09
         end_date: 2024-05
-        summary: Supported athletics operations and transformed sports-technology data into usable performance information for coaching staff.
+        summary: Supported game-day and technical operations for women's volleyball, men's and women's basketball, and men's and women's soccer.
         highlights:
-          - Developed R and Python workflows to clean, process, and analyze sports-technology datasets.
-          - Directed game-day video and statistical capture and maintained access to performance data.
-          - Produced reports connecting performance information with player-development and training decisions.
+          - Used basic R analysis to organize opponent information and support pregame preparation.
+          - Edited game video, operated replay workflows for plays requiring review, and distributed live feeds and still images to television broadcast partners.
+          - Coordinated event information and technical workflows with athletics staff, officials, and broadcasters.
 
       - company: New Jersey Jackals
         position: Baseball Operations Intern
         location: Woodland Park, New Jersey
         start_date: 2019-06
         end_date: 2019-09
-        summary: Supported front-office administration, game-day operations, and baseball logistics for an independent professional club.
+        summary: Supported game-day setup, presentation, customer service, and closing operations for an independent professional baseball club.
         highlights:
-          - Tracked player transactions, active rosters, and scouting reports.
-          - Supported event staffing, facility setup, travel, equipment, and scouting logistics.
+          - Set up video and game-replay equipment before games.
+          - Installed team banners, sponsor signage, and promotional materials throughout the ballpark.
+          - Operated a concession stand and supported postgame closing by helping ensure spectators exited the stadium safely.
 
     Education:
       - institution: Saint Peter's University
@@ -86,32 +98,35 @@ cv:
 
     Technical Skills:
       - label: Analytics & Programming
-        details: Python, R, SQL
+        details: R, Python, SQL, dplyr, tidyr, ggplot2, Shiny, Plotly, DT
+      - label: Baseball Data
+        details: Baseball Savant, Statcast, Baseball-Reference
       - label: Baseball Technologies
-        details: TrackMan, BlastMotion, Rapsodo, BAT Software
-      - label: Operations & Administration
-        details: Budgeting, data entry, player logistics, staff logistics, Microsoft Office Suite
+        details: Blast Motion certified; TrackMan training through Athletic Lab; Rapsodo online coursework
+      - label: Operations & Media
+        details: Game-day supervision, inventory, customer service, video editing, replay and broadcast support
       - label: Languages
         details: English (fluent), Spanish (native)
 
     Relevant Projects:
-      - name: Panalytics Prospects
-        summary: Interactive R Shiny application for exploring rookie pitcher performance across MLB and the Minor Leagues.
+      - name: Marlins Decision Lab
+        summary: Interactive R Shiny application for team-relative player evaluation, comparison, visualization, and report-ready data exports.
         highlights:
           - "R"
           - "Shiny"
+          - "Plotly"
+          - "DT"
+      - name: Bubba Chandler Pitching Research
+        summary: Pitcher-development case study connecting arm-slot changes and mechanical systems with breaking-ball shape, swing decisions, weak contact, and strikeout outcomes.
+        highlights:
+          - "R"
+          - "Statcast"
+          - "Pitch Design"
           - "Data Visualization"
-          - "Baseball Analytics"
-      - name: Athlete Lab
-        summary: First R Shiny application, created as a hands-on foundation in interactive data applications.
+      - name: Miguel Vargas Hitting Research
+        summary: Hitter-development case study evaluating approach, bat speed, contact quality, performance change, and the sustainability of offensive improvement.
         highlights:
           - "R"
-          - "Shiny"
-          - "Interactive Applications"
-      - name: Miami Marlins Prospect Report
-        summary: Interactive report for exploring player performance and prospect information.
-        highlights:
-          - "R"
-          - "Shiny"
-          - "Data Analysis"
+          - "Statcast"
+          - "Player Development"
           - "Data Visualization"

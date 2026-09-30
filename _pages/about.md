@@ -37,7 +37,7 @@ latest_posts:
   <a class="pb-button pb-button-secondary" href="mailto:panalyticsbaseball@gmail.com">Email</a>
 </div>
 
-<p class="pb-section-intro">Gabriel's background includes Baseball Operations roles with the Somerset Patriots and New Jersey Jackals, athletics operations at Saint Peter's University, and experience as a collegiate catcher and strength and conditioning coach.</p>
+<p class="pb-section-intro">Gabriel's background includes game-day supervision with the Somerset Patriots, an internship with the New Jersey Jackals, athletics operations at Saint Peter's University, and experience as a collegiate catcher and strength and conditioning coach.</p>
 
 <section class="pb-section" aria-labelledby="featured-work">
   <h2 id="featured-work" class="pb-section-heading">Featured Work</h2>
