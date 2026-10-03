@@ -273,6 +273,29 @@
   max-width: 56rem;
 }
 
+.pb-report-pair {
+  align-items: start;
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.75rem auto 2.5rem;
+  max-width: 62rem;
+}
+
+.pb-report-panel {
+  margin: 0;
+  min-width: 0;
+}
+
+.pb-report-panel figcaption {
+  color: var(--pb-slate);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0.65rem auto 0;
+  max-width: 29rem;
+  text-align: center;
+}
+
 .pb-interactive-chart {
   background: var(--pb-white);
   border: 1px solid var(--pb-border);
@@ -362,6 +385,10 @@
   .pb-interactive-chart {
     height: 32rem;
   }
+
+  .pb-report-pair {
+    grid-template-columns: 1fr;
+  }
 }
 
 html.dark .pb-card,
@@ -383,10 +410,12 @@ html[data-theme="dark"] .pb-lead {
 
 html.dark .pb-card p,
 html.dark .pb-report-figure figcaption,
+html.dark .pb-report-panel figcaption,
 html.dark .pb-section-intro,
 html.dark .pb-meta,
 html[data-theme="dark"] .pb-card p,
 html[data-theme="dark"] .pb-report-figure figcaption,
+html[data-theme="dark"] .pb-report-panel figcaption,
 html[data-theme="dark"] .pb-section-intro,
 html[data-theme="dark"] .pb-meta {
   color: #bcccdc;
