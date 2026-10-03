@@ -8,7 +8,7 @@ image: /assets/img/player-analysis/bubba-chandler/bubba-chandler-profile.jpg
 metrics:
   - "98.3 mph Four-Seam"
   - ".318 xwOBA"
-  - "20.6% K%"
+  - "20.8% K%"
 summary: "An in-season R&D study of Chandler's lower arm slot, breaking-ball redesign, hitter-exposure penalty, sequencing, and role fit."
 description: Did Bubba Chandler's lower arm slot improve his starter profile, and how should the organization optimize his arsenal and usage?
 permalink: /player-analysis/bubba-chandler/
@@ -22,14 +22,14 @@ permalink: /player-analysis/bubba-chandler/
   <li>31 Games</li>
   <li>2,692 Pitches</li>
   <li>98.3 mph Four-Seam</li>
-  <li>20.6% K%</li>
-  <li>11.7% BB%</li>
+  <li>20.8% K%</li>
+  <li>11.9% BB%</li>
   <li>.318 xwOBA</li>
 </ul>
 
 ## Executive Summary
 
-Bubba Chandler made a substantial in-season mechanical adjustment. His average arm angle declined from 46.8 degrees during the high-slot phase to 38.7 degrees during the sustained low-slot phase. The lower slot improved strike throwing: BB% declined from 13.3% to 9.8%, Zone% increased from 46.9% to 50.6%, and CSW% increased from 25.2% to 26.5%. That CSW gain came from called strikes rather than additional bat-missing ability.
+Bubba Chandler made a substantial in-season mechanical adjustment. His average arm angle declined from 46.8 degrees during the high-slot phase to 38.7 degrees during the sustained low-slot phase. The lower slot improved strike throwing: BB% declined from 13.6% to 9.8%, Zone% increased from 46.9% to 50.6%, and CSW% increased from 25.2% to 26.5%. That CSW gain came from called strikes rather than additional bat-missing ability.
 
 The adjustment did not produce more deception. Whiff% declined from 22.3% to 17.4%, Chase% fell from 30.5% to 25.7%, and Hard-Hit% increased from 36.0% to 41.7%. Chandler's slider became 3.2 mph harder and gained vertical movement, but its Whiff% declined from 35.4% to 12.5%. The pitch became more useful for acquiring strikes and less effective for ending plate appearances.
 
@@ -44,7 +44,7 @@ The change was gradual rather than a single-game event. Chandler operated primar
   <figcaption>The four phases provide a more useful comparison than a calendar first-half and second-half split because they follow the actual mechanical progression.</figcaption>
 </figure>
 
-The adjustment appeared across the entire arsenal. From the high-slot period to the low-slot period, four-seam arm angle declined by approximately seven degrees, slider arm angle by six degrees, and changeup arm angle by seven degrees. Extension remained close to 6.6 feet, indicating that the change came primarily from release geometry rather than a shorter stride.
+The adjustment appeared across the entire arsenal. From the high-slot period to the low-slot period, average arm angle declined by 9.0 degrees on the four-seam, 8.6 degrees on the slider, and 8.5 degrees on the changeup. Average extension remained close to 6.6 feet across those pitch types, so the available tracking data show a large change in arm angle without a material change in extension.
 
 ## 2. Did the Lower Slot Improve Dominance?
 
@@ -54,9 +54,9 @@ The lower slot improved control but did not make Chandler more difficult to hit.
 
 | Mechanical system | Games |  PA | Arm angle |    K% |   BB% | Zone% |  CSW% | Whiff% | Chase% | Hard-Hit% | xwOBA |
 | :---------------- | ----: | --: | --------: | ----: | ----: | ----: | ----: | -----: | -----: | --------: | ----: |
-| High slot         |    14 | 301 |     46.8° | 22.6% | 13.3% | 46.9% | 25.2% |  22.3% |  30.5% |     36.0% |  .319 |
+| High slot         |    14 | 301 |     46.8° | 22.6% | 13.6% | 46.9% | 25.2% |  22.3% |  30.5% |     36.0% |  .319 |
 | Transition        |     6 | 141 |     40.8° | 15.6% | 10.6% | 48.9% | 23.4% |  18.6% |  26.7% |     39.6% |  .286 |
-| Low slot          |     9 | 194 |     38.7° | 21.1% |  9.8% | 50.6% | 26.5% |  17.4% |  25.7% |     41.7% |  .333 |
+| Low slot          |     9 | 194 |     38.7° | 21.6% |  9.8% | 50.6% | 26.5% |  17.4% |  25.7% |     41.7% |  .333 |
 | Late rebound      |     2 |  38 |     42.0° | 21.1% | 13.2% | 49.1% | 26.3% |  23.6% |  24.7% |     50.0% |  .347 |
 
 </div>
@@ -65,11 +65,11 @@ The lower slot improved control but did not make Chandler more difficult to hit.
 
 - **High slot produced the most swing-and-miss pressure.** It led the four systems in K% and Chase% and led the three meaningful samples in Whiff%. Its limitation was inefficient strike throwing, reflected in the highest BB% and lowest Zone%.
 - **Transition produced the best outcomes without the best underlying dominance.** Its .286 xwOBA and 86.7 mph average exit velocity were the best marks, but its 15.6% K% and 23.4% CSW% suggest that some of the run prevention came from favorable contact outcomes rather than a fully optimized arsenal.
-- **Low slot produced the clearest command improvement.** It delivered the lowest BB%, highest Zone%, and highest CSW%. However, the CSW profile shifted toward called strikes: Called Strike% reached 18.8%, while Whiff% fell to 17.4% and Chase% to 25.7%.
+- **Low slot produced the clearest strike-throwing improvement.** It delivered the lowest BB%, highest Zone%, and highest CSW%. However, the CSW profile shifted toward called strikes: Called Strike% reached 18.8%, while Whiff% fell to 17.4% and Chase% to 25.7%.
 - **The low slot did not suppress damaging contact.** Soft contact increased to 29.5%, but Hard-Hit% also rose to 41.7% and xwOBA deteriorated to .333. The system created more extremes rather than uniformly weaker contact.
 - **Late rebound is an experiment, not a verdict.** Whiff% recovered to 23.6% and Zone% remained near 49%, but the phase includes only two games and 38 PA. Its 50.0% Hard-Hit% and .347 xwOBA prevent a positive conclusion from that sample.
 
-The four-system comparison identifies a development target rather than a clear winner: preserve the low-slot system's strike efficiency while recovering the high-slot system's chase and swing-and-miss qualities. The transition range near 41–44 degrees remains the most logical testing window, but its favorable xwOBA should not be treated as proof of superior dominance.
+The four-system comparison identifies a development target rather than a clear winner: preserve the low-slot system's strike efficiency while recovering the high-slot system's chase and swing-and-miss qualities. An intermediate range near 40–42 degrees is a reasonable testing hypothesis because it covers the observed transition and late-rebound averages, but the favorable transition xwOBA should not be treated as proof of superior dominance.
 
 <figure class="pb-report-figure">
   <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/bubba-chandler/02-deception-by-arm-slot.png' | relative_url }}" alt="Bubba Chandler swing chase whiff and strikeout rates by arm-slot phase">
@@ -83,7 +83,7 @@ Contact quality was also mixed. Soft contact increased, but Hard-Hit% moved in t
   <figcaption>The lower slot produced more batted balls below 80 mph, but it also produced more contact at 95 mph or harder.</figcaption>
 </figure>
 
-The data do not identify the lowest slot as the optimal solution. The more promising target may be the 41–44 degree range used during the transition and late-rebound periods, but the two-start rebound sample is not sufficient for a firm conclusion.
+The data do not identify the lowest slot as the optimal solution. A 40–42 degree intermediate range is worth testing because it covers the observed transition and late-rebound averages, but the two-start rebound sample is not sufficient for a firm conclusion.
 
 ## 3. How Did the Breaking-Ball System Change?
 
@@ -107,12 +107,12 @@ The sweeper was not simply relabeled as a slider. Its horizontal movement remain
 
 ## 4. How Did Slider Location Change?
 
-The high-slot slider was concentrated below the zone and near the lower glove-side edge. The low-slot version moved upward and into the strike zone. Zone% increased, but the pitch became easier to contact. The Baseball Savant maps below use the same pitch filter, catcher perspective, batter-zone adjustment, and visual scale, making the location patterns directly comparable.
+The high-slot slider was concentrated below the zone and near the lower glove-side edge. The low-slot version moved upward and into the strike zone. Zone% increased, but the pitch became easier to contact. The Baseball Savant maps below use the same pitch filter, catcher perspective, and batter-zone adjustment. They are intended to compare location patterns; color intensity should be interpreted within each normalized map rather than as an absolute density comparison between periods.
 
 <div class="pb-report-pair" role="group" aria-label="Bubba Chandler slider location comparison by arm-slot phase">
   <figure class="pb-report-panel">
     <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/bubba-chandler/09a-slider-high-slot-savant.svg' | relative_url }}" alt="Baseball Savant heatmap of Bubba Chandler slider locations during the high-slot phase from March 31 through June 13">
-    <figcaption><strong>High Slot · Mar 31–Jun 13.</strong> More sliders finished near or beneath the lower boundary, supporting the pitch's stronger chase and swing-and-miss profile.</figcaption>
+    <figcaption><strong>High Slot · Mar 31–Jun 13.</strong> More sliders finished near or beneath the lower boundary, consistent with the pitch's stronger swing-and-miss profile.</figcaption>
   </figure>
   <figure class="pb-report-panel">
     <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/bubba-chandler/09b-slider-low-slot-savant.svg' | relative_url }}" alt="Baseball Savant heatmap of Bubba Chandler slider locations during the low-slot phase from July 28 through September 13">
@@ -148,7 +148,7 @@ This is not proof that Chandler cannot remain a starter. It indicates that his c
 
 ## 7. Which Sequences Work Best?
 
-The most effective frequent sequence was four-seam followed by slider. The second pitch in that sequence generated 27.9% Whiff, 41.9% Chase, and .226 xwOBA. Reversing the pair was much less effective: slider followed by four-seam generated 16.1% Whiff and .363 xwOBA.
+Four-seam followed by slider produced one of Chandler's strongest combinations of bat-missing and expected results among frequently used pairs. The second pitch in that sequence generated 27.9% Whiff, 41.9% Chase, and .226 xwOBA across 187 pitches and 56 completed plate appearances. Reversing the pair was much less effective: slider followed by four-seam generated 16.1% Whiff and .363 xwOBA across 173 pitches and 53 completed plate appearances.
 
 <figure class="pb-report-figure">
   <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/bubba-chandler/07-sequence-effectiveness.png' | relative_url }}" alt="Bubba Chandler pitch-pair effectiveness by whiff rate xwOBA and frequency">
@@ -184,13 +184,13 @@ Two opportunities stand out:
 - Against right-handed hitters, the changeup produced 35.1% Whiff and .192 xwOBA despite only 6.9% usage. The sweeper produced 31.3% Whiff and .216 xwOBA in a smaller sample.
 - Against left-handed hitters, the four-seam produced .353 xwOBA and the sinker .403. The changeup generated a more competitive .306 xwOBA, but its location and shape still need refinement.
 
-The organization should test more changeups against right-handed hitters and reconsider whether completely removing the sweeper gave away a useful platoon weapon.
+The organization should test more changeups against right-handed hitters and reconsider whether the sweeper's near-elimination during the low-slot phase gave away a useful platoon weapon.
 
 ## Development and Usage Recommendations
 
-### 1. Test a controlled 41–44 degree arm-slot target
+### 1. Test a controlled 40–42 degree arm-slot target
 
-The lowest slot improved control but reduced deception. The transition range produced the best expected results, and the late rebound recovered Whiff% in a very small sample. A controlled trial should compare pitch shape, command, and health feedback rather than treating the lowest repeatable slot as automatically optimal.
+The lowest slot improved strike throwing but reduced deception. The transition range produced the best expected results, and the late rebound recovered Whiff% in a very small sample. A controlled 40–42 degree trial is a development hypothesis—not a proven optimum—and should compare pitch shape, location, and health feedback rather than treating the lowest observed slot as automatically optimal.
 
 ### 2. Separate strike-getting and finishing breaking balls
 
@@ -210,13 +210,13 @@ Chandler's present profile is strongest during the first trip through the lineup
 
 ## Bottom Line
 
-Chandler's lower arm slot made his delivery more repeatable and improved strike throwing, but it did not increase dominance. The adjustment changed the slider from a bat-missing pitch into a harder strike pitch and reduced overall chase and whiff. His four-seam stuff remains strong deep into starts, so the most actionable path is to improve breaking-ball separation, sequence direction, and the plan for repeated hitter exposure.
+Chandler's lower arm slot improved strike throwing, but it did not increase dominance. The adjustment changed the slider from a bat-missing pitch into a harder strike pitch and reduced overall chase and whiff. His four-seam stuff remains strong deep into starts, so the most actionable path is to improve breaking-ball separation, sequence direction, and the plan for repeated hitter exposure.
 
-The starter foundation remains: premium fastball velocity, multiple secondary shapes, and evidence that control can improve. The next developmental step is not more raw stuff. It is organizing that stuff into a plan that remains unpredictable beyond the First PA.
+The starter foundation remains: premium fastball velocity, multiple secondary shapes, and evidence that strike throwing can improve. The next developmental step is not more raw stuff. It is organizing that stuff into a plan that remains unpredictable beyond the First PA.
 
 ## Methodology and Limitations
 
-The study uses Baseball Savant pitch-by-pitch data from March 31 through September 25, 2026. Whiff% is misses divided by swings. Chase% is swings at pitches outside the Statcast zone. Soft contact is defined as batted balls below 80 mph, and Hard-Hit% as batted balls at 95 mph or harder. Mechanical phases follow sustained game-level arm-angle changes.
+The study uses Baseball Savant pitch-by-pitch data from March 31 through September 25, 2026. K% includes strikeout double plays, and BB% includes intentional walks. Whiff% is misses divided by swings. Chase% is swings at pitches outside the Statcast zone. Soft contact is defined as batted balls below 80 mph, and Hard-Hit% as batted balls at 95 mph or harder. xwOBA is the mean of Baseball Savant's `estimated_woba_using_speedangle` values on completed plate appearances for which the field is available. Mechanical phases follow sustained game-level arm-angle changes.
 
 Pitch-level expected results, sequence splits, and late-season phases include different sample sizes. Sequence results are influenced by count, location, batter quality, and selection. The analysis identifies development hypotheses and testing priorities; it does not establish that the arm-slot change caused every downstream result.
 

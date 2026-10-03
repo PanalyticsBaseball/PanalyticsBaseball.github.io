@@ -166,8 +166,8 @@ phase_summary <- pitches |>
     pitches = n(),
     pa = sum(plate_appearance),
     arm_angle = mean(arm_angle, na.rm = TRUE),
-    `K%` = 100 * mean(events[plate_appearance] == "strikeout"),
-    `BB%` = 100 * mean(events[plate_appearance] == "walk"),
+    `K%` = 100 * mean(events[plate_appearance] %in% c("strikeout", "strikeout_double_play")),
+    `BB%` = 100 * mean(events[plate_appearance] %in% c("walk", "intent_walk")),
     `Swing%` = 100 * mean(swing),
     `Zone%` = 100 * mean(in_zone, na.rm = TRUE),
     `CSW%` = 100 * mean(called_strike | whiff),
@@ -395,8 +395,8 @@ exposure_summary <- pitches |>
   group_by(exposure) |>
   summarise(
     pa = sum(plate_appearance),
-    `K%` = 100 * mean(events[plate_appearance] == "strikeout"),
-    `BB%` = 100 * mean(events[plate_appearance] == "walk"),
+    `K%` = 100 * mean(events[plate_appearance] %in% c("strikeout", "strikeout_double_play")),
+    `BB%` = 100 * mean(events[plate_appearance] %in% c("walk", "intent_walk")),
     xwOBA = mean(estimated_woba_using_speedangle[plate_appearance], na.rm = TRUE),
     .groups = "drop"
   )
@@ -503,7 +503,7 @@ sequence_summary <- sequenced_pitches |>
     whiff_rate = 100 * whiffs / swings,
     chase_rate = 100 * mean(swing[!is.na(in_zone) & !in_zone]),
     pa = sum(plate_appearance),
-    strikeouts = sum(events == "strikeout", na.rm = TRUE),
+    strikeouts = sum(events %in% c("strikeout", "strikeout_double_play"), na.rm = TRUE),
     xwoba = mean(estimated_woba_using_speedangle[plate_appearance], na.rm = TRUE),
     .groups = "drop"
   ) |>
@@ -532,8 +532,8 @@ sequence_plot <- ggplot(sequence_summary, aes(xwoba, whiff_rate)) +
   scale_x_continuous(labels = function(x) sub("^0", "", sprintf("%.3f", x))) +
   scale_y_continuous(labels = label_percent(scale = 1)) +
   labs(
-    title = "Fastball → slider is Chandler's strongest frequent pairing",
-    subtitle = "The reverse sequence produces less swing-and-miss and more expected damage",
+    title = "Fastball → slider pairs misses with lower expected damage",
+    subtitle = "The reverse sequence produces less swing-and-miss and more expected damage in a similarly sized sample",
     x = "xwOBA on the second pitch",
     y = "Whiff% on the second pitch",
     size = "Pitches",
