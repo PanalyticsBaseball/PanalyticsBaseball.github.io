@@ -107,12 +107,20 @@ The sweeper was not simply relabeled as a slider. Its horizontal movement remain
 
 ## 4. How Did Slider Location Change?
 
-The high-slot slider was concentrated below the zone and near the lower glove-side edge. The low-slot version moved upward and into the strike zone. Zone% increased, but the pitch became easier to contact.
+The high-slot slider was concentrated below the zone and near the lower glove-side edge. The low-slot version moved upward and into the strike zone. Zone% increased, but the pitch became easier to contact. The Baseball Savant maps below use the same pitch filter, catcher perspective, batter-zone adjustment, and visual scale, making the location patterns directly comparable.
 
-<figure class="pb-report-figure">
-  <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/bubba-chandler/09-slider-location-by-arm-slot.png' | relative_url }}" alt="Bubba Chandler slider location density in the high-slot and low-slot phases">
-  <figcaption>The location change supports the pitch-level results: the low-slot slider acquired more strikes but lost finishing quality.</figcaption>
-</figure>
+<div class="pb-report-pair" role="group" aria-label="Bubba Chandler slider location comparison by arm-slot phase">
+  <figure class="pb-report-panel">
+    <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/bubba-chandler/09a-slider-high-slot-savant.svg' | relative_url }}" alt="Baseball Savant heatmap of Bubba Chandler slider locations during the high-slot phase from March 31 through June 13">
+    <figcaption><strong>High Slot · Mar 31–Jun 13.</strong> More sliders finished near or beneath the lower boundary, supporting the pitch's stronger chase and swing-and-miss profile.</figcaption>
+  </figure>
+  <figure class="pb-report-panel">
+    <img class="pb-report-chart" src="{{ '/assets/img/player-analysis/bubba-chandler/09b-slider-low-slot-savant.svg' | relative_url }}" alt="Baseball Savant heatmap of Bubba Chandler slider locations during the low-slot phase from July 28 through September 13">
+    <figcaption><strong>Low Slot · Jul 28–Sep 13.</strong> The distribution shifted upward and toward the zone, helping acquire strikes but providing hitters more reachable locations.</figcaption>
+  </figure>
+</div>
+
+The maps reinforce the pitch-level tradeoff rather than prove that location alone caused it. Alongside the upward shift, the slider gained velocity and vertical movement, while Whiff% fell from 35.4% to 12.5% and xwOBA rose from .298 to .367.
 
 The development question is not whether Chandler should abandon the hard slider. It is whether the organization can separate its roles: use the hard slider for strikes and preserve a second breaking ball with enough depth or sweep to finish hitters.
 
