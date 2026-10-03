@@ -1,12 +1,7 @@
-- title: "[ADD ARTICLE TITLE 01]"
-  description: "[ADD A SHORT DESCRIPTION OF THE BASEBALL QUESTION, INSIGHT, OR RESEARCH TOPIC]"
-  date: "[ADD DATE — OPTIONAL]"
-  url:
-- title: "[ADD ARTICLE TITLE 02]"
-  description: "[ADD A SHORT DESCRIPTION OF THE BASEBALL QUESTION, INSIGHT, OR RESEARCH TOPIC]"
-  date: "[ADD DATE — OPTIONAL]"
-  url:
-- title: "[ADD ARTICLE TITLE 03]"
-  description: "[ADD A SHORT DESCRIPTION OF THE BASEBALL QUESTION, INSIGHT, OR RESEARCH TOPIC]"
-  date: "[ADD DATE — OPTIONAL]"
-  url:
+- title: "Bubba Chandler's Lower Arm Slot Improved Strike Throwing—but Reduced Deception"
+  description: "A pitcher R&D study connecting Chandler's in-season arm-slot adjustment with strike throwing, breaking-ball shape, hitter exposure, sequencing, and a practical development plan."
+  date: "October 2026"
+  image: "/assets/img/player-analysis/bubba-chandler/bubba-chandler-profile.jpg"
+  url: "/player-analysis/bubba-chandler/"
+  button_label: "Read the Article"
+  external: false
