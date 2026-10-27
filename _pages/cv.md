@@ -3,7 +3,7 @@ layout: cv
 permalink: /cv/
 title: Resume / CV
 nav: true
-nav_order: 6
+nav_order: 7
 cv_pdf: /assets/rendercv/rendercv_output/Gabriel_Sequera_CV.pdf
 cv_format: rendercv
 description: Gabriel Sequera's verified experience, baseball analytics projects, technical skills, and professional background.

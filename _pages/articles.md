@@ -4,7 +4,7 @@ title: Articles
 permalink: /articles/
 description: Baseball Research & Insights by Gabriel Sequera.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/panalytics.css' | relative_url }}">

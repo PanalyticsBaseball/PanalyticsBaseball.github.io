@@ -4,7 +4,7 @@ title: R Code
 permalink: /r-code/
 description: Reproducible R workflows connecting Baseball Savant data, visual analysis, and player-development decisions.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/panalytics.css' | relative_url }}">
