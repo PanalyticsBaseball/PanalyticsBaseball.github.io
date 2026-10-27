@@ -32,10 +32,7 @@ async function check(name, action) {
 }
 
 async function expectText(selector, expected) {
-  await page.waitForFunction(
-    ({ selector, expected }) => document.querySelector(selector)?.textContent?.includes(expected),
-    { selector, expected },
-  );
+  await page.waitForFunction(({ selector, expected }) => document.querySelector(selector)?.textContent?.includes(expected), { selector, expected });
 }
 
 await page.goto("http://127.0.0.1:7391", { waitUntil: "networkidle" });
@@ -125,10 +122,7 @@ await page.screenshot({
   fullPage: true,
 });
 
-await fs.writeFile(
-  "assets/img/r-code/marlins-shiny/interaction-test-report.json",
-  JSON.stringify({ checks, browserErrors }, null, 2),
-);
+await fs.writeFile("assets/img/r-code/marlins-shiny/interaction-test-report.json", JSON.stringify({ checks, browserErrors }, null, 2));
 
 await browser.close();
 
