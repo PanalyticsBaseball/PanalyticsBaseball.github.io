@@ -1,0 +1,197 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Brendan Lawson | Panalytics Baseball | Gabriel Sequera </title> <meta name="author" content="Gabriel Sequera"> <meta name="description" content="Does Brendan Lawson project as an everyday major-league shortstop, or will his long-term value depend primarily on the bat?"> <meta name="keywords" content="baseball operations, player development, baseball analytics, scouting, R, Shiny, Gabriel Sequera, Panalytics Baseball"> <meta property="og:site_name" content="Panalytics Baseball | Gabriel Sequera"> <meta property="og:type" content="website"> <meta property="og:title" content="Panalytics Baseball | Gabriel Sequera | Brendan Lawson"> <meta property="og:url" content="https://panalyticsbaseball.github.io/scouting-reports/brendan-lawson/"> <meta property="og:description" content="Does Brendan Lawson project as an everyday major-league shortstop, or will his long-term value depend primarily on the bat?"> <meta property="og:image" content="https://panalyticsbaseball.github.io/assets/img/panalytics-og-placeholder.svg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Brendan Lawson"> <meta name="twitter:description" content="Does Brendan Lawson project as an everyday major-league shortstop, or will his long-term value depend primarily on the bat?"> <meta name="twitter:image" content="https://panalyticsbaseball.github.io/assets/img/panalytics-og-placeholder.svg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Gabriel Sequera"
+        },
+        "url": "https://panalyticsbaseball.github.io/scouting-reports/brendan-lawson/",
+        "@type": "WebSite",
+        "description": "Does Brendan Lawson project as an everyday major-league shortstop, or will his long-term value depend primarily on the bat?",
+        "headline": "Brendan Lawson",
+        
+        "sameAs": ["https://github.com/PanalyticsBaseball","https://www.linkedin.com/in/gabriel-sequera"],
+        
+        "name": "Gabriel Sequera",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/panalytics-favicon.svg?v=cfe28127ef13f09f5dcbd88eac6f9685"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://panalyticsbaseball.github.io/scouting-reports/brendan-lawson/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Panalytics Baseball | Gabriel Sequera </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Projects </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">Player Analysis </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/player-analysis/">Overview</a> <a class="dropdown-item " href="/player-analysis/hitters/">Hitters</a> <a class="dropdown-item " href="/player-analysis/pitchers/">Pitchers</a> </div> </li> <li class="nav-item active"> <a class="nav-link" href="/scouting-reports/">Scouting Reports <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/articles/">Articles </a> </li> <li class="nav-item "> <a class="nav-link" href="/r-code/">R Code </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">Resume / CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Brendan Lawson</h1> <p class="post-description">Does Brendan Lawson project as an everyday major-league shortstop, or will his long-term value depend primarily on the bat?</p> </header> <article> <link rel="stylesheet" href="/assets/css/panalytics.css"> <p class="pb-eyebrow">Amateur Scouting Case Study · 2027 Draft Class</p> <ul class="pb-metrics" aria-label="Brendan Lawson profile and 2026 performance"> <li>SS</li> <li>L / R</li> <li>6'3" · 215 lb</li> <li>.312 AVG</li> <li>.511 OBP</li> <li>.699 SLG</li> <li>19 HR</li> <li>14 SB</li> </ul> <h2 id="1-preliminary-2080-evaluation">1. Preliminary 20–80 Evaluation</h2> <p class="pb-lead">Working grades based on verified performance, historical testing, and limited public video. A 50 represents major-league average. Confidence is part of the grade and identifies where additional coverage is required.</p> <div class="pb-grade-card" aria-label="Brendan Lawson preliminary 20 to 80 scouting grades"> <div class="pb-grade-head"> <span>Tool</span><span>Present</span><span>Future</span><span>Confidence</span> </div> <div class="pb-grade-row"> <strong>Hit</strong><span class="pb-grade-number">50</span><span class="pb-grade-number pb-grade-future">55</span><span class="pb-confidence pb-confidence-medium">Medium</span> <div class="pb-grade-track"><i style="width:58.3%"></i></div> <p>Strong production and an improving BB/K profile; swing decisions against premium velocity and spin remain under-sampled.</p> </div> <div class="pb-grade-row"> <strong>Game Power</strong><span class="pb-grade-number">55</span><span class="pb-grade-number pb-grade-future">60</span><span class="pb-confidence pb-confidence-medium">Medium</span> <div class="pb-grade-track"><i style="width:66.7%"></i></div> <p>Nineteen home runs and a .387 ISO in 2026 support impact, but college performance is not translated directly into an MLB outcome.</p> </div> <div class="pb-grade-row"> <strong>Run</strong><span class="pb-grade-number">55</span><span class="pb-grade-number pb-grade-future">50</span><span class="pb-confidence pb-confidence-medium">Medium</span> <div class="pb-grade-track"><i style="width:50%"></i></div> <p>A historical 6.96 sixty and a 14-for-16 stolen-base record provide a baseline; current run times are still needed.</p> </div> <div class="pb-grade-row"> <strong>Arm</strong><span class="pb-grade-number">55</span><span class="pb-grade-number pb-grade-future">55</span><span class="pb-confidence pb-confidence-low">Low</span> <div class="pb-grade-track"><i style="width:58.3%"></i></div> <p>Historical 85 mph infield velocity and multiple throwing slots suggest above-average potential, pending current throws across the diamond.</p> </div> <div class="pb-grade-row"> <strong>Field</strong><span class="pb-grade-number">45</span><span class="pb-grade-number pb-grade-future">50</span><span class="pb-confidence pb-confidence-low">Low</span> <div class="pb-grade-track"><i style="width:50%"></i></div> <p>His first full season at shortstop and an improving finish are encouraging. Range, internal clock, and consistency cannot yet be graded confidently.</p> </div> </div> <div class="pb-scouting-comp"> <p class="pb-eyebrow">Style / Role Archetype</p> <h3>Brendan Lawson ↔ Gunnar Henderson</h3> <p><strong>Why the reference works:</strong> both are 6'3", left-handed hitters who throw right-handed, carry power-and-patience value, and have experience on the left side of the infield.</p> <p><strong>Important boundary:</strong> this is a physical and role-based reference only. It is not a claim that Lawson has Henderson's present ability, defensive value, ceiling, or expected MLB production.</p> </div> <h2 id="2-executive-view">2. Executive View</h2> <p>Lawson combined elite on-base production with increased game power and baserunning value in 2026. He hit .312/.511/.699 with 19 home runs, 53 walks, 24 hit-by-pitches, 46 strikeouts, and 14 steals in 16 attempts. His walk total exceeded his strikeout total, while his home-run rate nearly doubled from 2025.</p> <p>The statistical foundation justifies deeper evaluation, but public highlight packages cannot replace full plate appearances, complete defensive chances, or verified pitch-level data. The .511 OBP was supported by both a major walk-rate increase and an unusually large HBP total, so the improvement should not be attributed to plate discipline alone.</p> <h3 id="verified-strengths">Verified Strengths</h3> <ul> <li> <strong>On-base pressure:</strong> 20.1% walk rate, .511 OBP, and more walks than strikeouts.</li> <li> <strong>Power progression:</strong> slugging increased from .522 to .699 and home runs from 10 to 19.</li> <li> <strong>Competitive production:</strong> strong performance at Florida and a .917 OPS in the 2025 Cape Cod League sample.</li> <li> <strong>Athletic baseline:</strong> historical 6.96 sixty, 85 mph infield throw, and above-average Perfect Game testing percentiles.</li> </ul> <h3 id="primary-evaluation-risks">Primary Evaluation Risks</h3> <ul> <li>Only one clearly attributable public shortstop sequence has been coded.</li> <li>A complete public plate appearance against a left-handed pitcher has not been verified.</li> <li>Fielding percentage does not measure range, positioning, play difficulty, or expected outs.</li> <li>Public video does not provide reliable pitch classifications, chase rate, whiff rate, or exit velocity.</li> </ul> <h2 id="3-video-evidence">3. Video Evidence</h2> <p>The players below stream from the original rights holders. The full packages are retained for reliable playback; each card identifies the exact review window.</p> <div class="pb-video-card"> <div class="pb-video-frame"><iframe src="https://www.youtube.com/embed/MwvMePJnfEY" title="Florida versus Rider full game highlights" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div> <div class="pb-video-copy"> <p class="pb-eyebrow">Game Power · Postseason</p> <h3>Florida vs Rider</h3> <p>Lawson ends the Regional opener with a walk-off home run. For the shorter Florida package, open the source at <strong>2:40</strong>.</p> <a class="pb-button pb-button-secondary" href="https://www.youtube.com/watch?v=h6Qye5Rl4dI&amp;t=160s" target="_blank" rel="noopener">Open at 2:40</a> </div> </div> <div class="pb-video-card"> <div class="pb-video-frame"><iframe src="https://www.youtube.com/embed/zJYGFgU7u5I" title="Troy versus Florida full game highlights" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div> <div class="pb-video-copy"> <p class="pb-eyebrow">Defensive Action · 3:50–3:56</p> <h3>Troy vs Florida</h3> <p>Lawson handles the force at second himself and completes the double play with the throw to first. It is useful evidence of the exchange and completion, but only one defensive play.</p> <a class="pb-button pb-button-secondary" href="https://www.youtube.com/watch?v=zJYGFgU7u5I&amp;t=230s" target="_blank" rel="noopener">Open at 3:50</a> </div> </div> <div class="pb-video-card"> <div class="pb-video-frame"><iframe src="https://www.youtube.com/embed/7hrEzieeQvs" title="Florida versus Vanderbilt SEC Tournament highlights" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div> <div class="pb-video-copy"> <p class="pb-eyebrow">Multi-PA Production · SEC Tournament</p> <h3>Florida vs Vanderbilt</h3> <p>Florida's official recap records Lawson at 3-for-3 with a home run and two walks. The package provides examples rather than a complete approach grade.</p> </div> </div> <h2 id="4-follow-recommendation">4. Follow Recommendation</h2> <p><strong>Priority follow for expanded video and pitch-level review.</strong> Lawson’s production, strike-zone value, and power growth justify continued coverage. The next decision should depend on complete plate appearances against quality velocity and left-handed pitching, plus a broader set of shortstop chances.</p> <p>The current evidence supports interest; it does not yet support a definitive professional-role projection. The central question remains whether Lawson can stay at shortstop or whether his long-term value will depend primarily on the bat at second or third base.</p> <h3 id="next-coverage-priorities">Next Coverage Priorities</h3> <ol> <li>Complete plate appearances against quality left-handed pitching.</li> <li>Routine and range plays at shortstop.</li> <li>Two-strike decisions against breaking balls.</li> <li>Throws on the move and from multiple angles.</li> <li>Current run times and first-step observations.</li> </ol> <h2 id="methodology-and-limitations">Methodology and Limitations</h2> <p>Performance data come from official Florida and Cape Cod League records. Historical physical testing comes from Perfect Game and is not presented as a current measurement. Public highlights are selection-biased. The 20–80 grades are working scouting hypotheses and should be revised when stronger evidence becomes available.</p> <p>No pitch type, swing decision, defensive range grade, or handedness split is inferred when the available evidence does not support it.</p> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Gabriel Sequera. <strong>Panalytics Baseball</strong> · <a href="https://www.linkedin.com/in/gabriel-sequera/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/PanalyticsBaseball" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:panalyticsbaseball@gmail.com">Email</a> · Built with GitHub Pages </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-projects",
+          title: "Projects",
+          description: "Baseball analytics and player-development projects built with practical baseball questions in mind.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "dropdown-overview",
+              title: "Overview",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/player-analysis/";
+              },
+            },{id: "dropdown-hitters",
+              title: "Hitters",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/player-analysis/hitters/";
+              },
+            },{id: "dropdown-pitchers",
+              title: "Pitchers",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/player-analysis/pitchers/";
+              },
+            },{id: "nav-scouting-reports",
+          title: "Scouting Reports",
+          description: "Evidence-based amateur and international scouting reports combining performance, video, tool grades, context, and projection.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/scouting-reports/";
+          },
+        },{id: "nav-articles",
+          title: "Articles",
+          description: "Baseball Research &amp; Insights by Gabriel Sequera.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/articles/";
+          },
+        },{id: "nav-r-code",
+          title: "R Code",
+          description: "Reproducible R workflows connecting Baseball Savant data, visual analysis, and player-development decisions.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/r-code/";
+          },
+        },{id: "nav-resume-cv",
+          title: "Resume / CV",
+          description: "Gabriel Sequera&#39;s verified experience, baseball analytics projects, technical skills, and professional background.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "players-brendan-lawson",
+          title: 'Brendan Lawson',
+          description: "Does Brendan Lawson project as an everyday major-league shortstop, or will his long-term value depend primarily on the bat?",
+          section: "Players",handler: () => {
+              window.location.href = "/scouting-reports/brendan-lawson/";
+            },},{id: "players-bubba-chandler",
+          title: 'Bubba Chandler',
+          description: "Did Bubba Chandler&#39;s lower arm slot improve his starter profile, and how should the organization optimize his arsenal and usage?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/bubba-chandler/";
+            },},{id: "players-jordan-walker",
+          title: 'Jordan Walker',
+          description: "What caused Jordan Walker&#39;s second-half decline, and what should his next offensive adjustment target?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/jordan-walker/";
+            },},{id: "players-louis-varland",
+          title: 'Louis Varland',
+          description: "How did Louis Varland develop into a late-inning reliever, and what should the organization monitor going forward?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/louis-varland/";
+            },},{id: "players-max-meyer",
+          title: 'Max Meyer',
+          description: "How did Max Meyer&#39;s higher arm slot reshape his arsenal, and why did performance decline in later hitter plate appearances?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/max-meyer/";
+            },},{id: "players-miguel-vargas",
+          title: 'Miguel Vargas',
+          description: "Why did Miguel Vargas improve in 2026, and how sustainable is the breakout?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/miguel-vargas/";
+            },},{id: "players-willson-contreras",
+          title: 'Willson Contreras',
+          description: "How did Willson Contreras build an impact offensive season in Boston, and which parts of the profile are sustainable?",
+          section: "Players",handler: () => {
+              window.location.href = "/player-analysis/willson-contreras/";
+            },},{id: "projects-athlete-lab",
+          title: 'Athlete Lab',
+          description: "Gabriel&#39;s first R Shiny application, created as a hands-on introduction to interactive baseball reporting.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/athlete-lab/";
+            },},{id: "projects-panalytics-prospects",
+          title: 'Panalytics Prospects',
+          description: "An interactive R Shiny application for exploring rookie pitcher performance across Major League Baseball and the Minor Leagues.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/panalytics-prospects/";
+            },},{id: "projects-miami-marlins-prospect-report",
+          title: 'Miami Marlins Prospect Report',
+          description: "An interactive R Shiny report for exploring player performance and prospect information in the Miami Marlins system.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/marlins-sports-intelligence/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%70%61%6E%61%6C%79%74%69%63%73%62%61%73%65%62%61%6C%6C@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/PanalyticsBaseball", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/gabriel-sequera", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
